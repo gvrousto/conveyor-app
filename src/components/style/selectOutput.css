@@ -1,0 +1,17 @@
+.select-output-container{
+  text-align: center;
+}
+
+.select-output-header{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: monospace;
+  font-size: 45px;
+}
+
+.select-output-vector-container{
+  position: 'relative';
+  height: '400px';
+  overflow: 'scroll';
+  marginBottom: '100px';
+}

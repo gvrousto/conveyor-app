@@ -1,0 +1,17 @@
+.raw-materials-container{
+  text-align: center;
+}
+
+.raw-materials-header{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 45px;
+  font-family: monospace;
+}
+
+.raw-materials-footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  font-family: monospace;
+}
