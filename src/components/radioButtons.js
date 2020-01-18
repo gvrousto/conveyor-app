@@ -1,9 +1,10 @@
 import React from 'react';
+import './style/radioButtons.css'
 
 class RadioButtons extends React.Component{
   render(){
     return(
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-row radio-buttons-container">
           <div className="custom-control custom-radio">
             <input type="radio" className="custom-control-input" id="XS" name="defaultExampleRadios"></input>
             <label className="custom-control-label" htmlFor="XS">XS</label>

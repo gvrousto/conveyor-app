@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
 import SelectOutput from './components/selectOutput'
 import RadioButtons from './components/radioButtons'
+import Button from 'react-bootstrap/Button'
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,7 +21,9 @@ function App() {
       </div>
       <div className="d-flex justify-content-around bd-highlight mb-3">
         <RadioButtons/>
-        <button type="button" className="btn btn-success">Generate</button>
+        <div className="button-custom-style">
+          <Button variant="success" size="lg">Initiate Binding</Button>
+        </div>
       </div>
 
     </div>

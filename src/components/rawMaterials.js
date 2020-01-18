@@ -4,6 +4,8 @@ import Gloves from "../materialImages/baseball_gloves.png";
 import CottonLace from "../materialImages/cotton_lace.png";
 import FabricSamples from "../materialImages/fabric_samples.png";
 import KiddLeatherGloves from "../materialImages/kidd_leather_gloves.png";
+import MilitarySurplus from "../materialImages/military_surplus_fabrics.png";
+import PileOfJeans from "../materialImages/pile_of_jeans.png";
 import './style/rawMaterials.css';
 
 
@@ -24,6 +26,16 @@ class RawMaterials extends React.Component {
       this.state = {
         imageSrc: FabricSamples,
         imageDescription: 'Fabric Samples'
+      };
+    } else if(this.props.material==="MilitarySurplus"){
+      this.state = {
+        imageSrc: MilitarySurplus,
+        imageDescription: 'Military Surplus'
+      };
+    } else if(this.props.material==="Jeans"){
+      this.state = {
+        imageSrc: PileOfJeans,
+        imageDescription: 'Pile of Jeans'
       };
     } else{
       this.state = {

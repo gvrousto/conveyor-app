@@ -9,6 +9,9 @@ const Routes =  () => (
       <Route exact path="/CottonLace" render={(props) => <RawMaterials {...props} material={'CottonLace'} />} />
       <Route exact path="/FabricSamples" render={(props) => <RawMaterials {...props} material={'FabricSamples'} />} />
       <Route exact path="/KiddLeatherGloves" render={(props) => <RawMaterials {...props} material={'KiddLeatherGloves'} />} />
+      <Route exact path="/MilitarySurplus" render={(props) => <RawMaterials {...props} material={'MilitarySurplus'} />} />
+      <Route exact path="/Jeans" render={(props) => <RawMaterials {...props} material={'Jeans'} />} />
+      <Route render={(props) => <RawMaterials {...props} material={'Gloves'} />} />
     </Switch>
 );
 
