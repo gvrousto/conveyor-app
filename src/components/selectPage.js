@@ -3,6 +3,7 @@ import SelectOutput from './selectOutput'
 import RadioButtons from './radioButtons'
 import RawMaterials from './rawMaterials'
 import Button from 'react-bootstrap/Button'
+import './style/selectPage.css'
 
 
 class SelectPage extends React.Component{

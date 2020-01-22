@@ -1,3 +1,11 @@
 .radio-button-unit{
   padding-right: 7px;
 }
+
+.radio-button-unit:hover{
+  cursor: pointer;
+}
+
+.custom-control-input-style:hover{
+  cursor: pointer;
+}
