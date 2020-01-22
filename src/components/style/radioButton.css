@@ -1,5 +1,7 @@
 .radio-button-unit{
   padding-right: 7px;
+  font-family: monospace;
+  font-size: 17px;
 }
 
 .radio-button-unit:hover{
