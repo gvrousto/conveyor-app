@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import RawMaterials from './components/rawMaterials'
 import SelectPage from './components/selectPage'
 import ScanPage from './components/scanPage'
 
