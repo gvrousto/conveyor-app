@@ -12,6 +12,7 @@ import './style/rawMaterials.css';
 class RawMaterials extends React.Component {
   constructor(props){
     super(props);
+    console.log(this.props);  
     if(this.props.material==="Gloves"){
       this.state = {
         imageSrc: Gloves,

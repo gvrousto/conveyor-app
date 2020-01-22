@@ -1,31 +1,38 @@
 import React from 'react';
+import RadioButton from './radioButton';
 import './style/radioButtons.css'
 
-class RadioButtons extends React.Component{
-  render(){
-    return(
-        <div className="d-flex flex-row radio-buttons-container">
-          <div className="custom-control custom-radio">
-            <input type="radio" className="custom-control-input" id="XS" name="defaultExampleRadios"></input>
-            <label className="custom-control-label" htmlFor="XS">XS</label>
-          </div>
-          <div className="custom-control custom-radio">
-            <input type="radio" className="custom-control-input" id="S" name="defaultExampleRadios"></input>
-            <label className="custom-control-label" htmlFor="S">S</label>
-          </div>
-          <div className="custom-control custom-radio">
-            <input type="radio" className="custom-control-input" id="M" name="defaultExampleRadios"></input>
-            <label className="custom-control-label" htmlFor="M">M</label>
-          </div>
-          <div className="custom-control custom-radio">
-            <input type="radio" className="custom-control-input" id="L" name="defaultExampleRadios"></input>
-            <label className="custom-control-label" htmlFor="L">L</label>
-          </div>
-          <div className="custom-control custom-radio">
-            <input type="radio" className="custom-control-input" id="XL" name="defaultExampleRadios"></input>
-            <label className="custom-control-label" htmlFor="XL">XL</label>
-          </div>
+class RadioButtons extends React.Component {
+
+  createRadioButtons(letter){
+    let i = 34;
+    let j = 52;
+    let radioButtons = [];
+    for(i=34;i<=j;i+=2){
+      let key = `${i}${letter}`;
+      radioButtons.push(<RadioButton key={key} number={i} letter={letter}/>);
+    }
+    return radioButtons;
+  }
+
+  createRadioRows(){
+    let letters = ['S', 'R', 'L'];
+    return letters.map((letter)=>{
+      let buttonList = this.createRadioButtons(letter);
+      return (
+        <div className="d-flex flex-row justify-content-around" key={letter}>
+          { buttonList }
         </div>
+      );
+    });
+  }
+
+  render(){
+    let radioRows = this.createRadioRows();
+    return(
+      <div className="d-flex flex-column radio-buttons-container">
+        { radioRows }
+      </div>
     );
   }
 }
