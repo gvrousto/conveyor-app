@@ -1,0 +1,18 @@
+.clothing-attribute-container{
+  padding-top: 100px;
+  font-family: monospace;
+  font-size: 35px;
+}
+
+.attribute{
+  padding-top: 50px;
+}
+
+.status-attribute{
+  padding-left: 15px;
+  color: darkgreen;
+}
+
+.output-image-container{
+  padding-top: 100px;
+}
