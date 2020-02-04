@@ -14,7 +14,7 @@ class OutputPage extends React.Component{
   constructor(props){
     super(props);
     console.log(this.props.match.params.material);
-    if(this.props.match.params.material==="BaseballGloveParka"){
+    if(this.props.match.params.material==="Gloves"){
       this.state = {
         imageSrc: BaseballGloveParka
       };
