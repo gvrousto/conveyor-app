@@ -30,9 +30,13 @@ class RadioButtons extends React.Component {
   render(){
     let radioRows = this.createRadioRows();
     return(
+      <div className="full-container">
+      <div className="radio-buttons-header">Size</div>
       <div className="d-flex flex-column radio-buttons-container">
         { radioRows }
       </div>
+      </div>
+
     );
   }
 }

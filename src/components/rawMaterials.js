@@ -12,7 +12,7 @@ import './style/rawMaterials.css';
 class RawMaterials extends React.Component {
   constructor(props){
     super(props);
-    console.log(this.props);  
+    console.log(this.props);
     if(this.props.material==="Gloves"){
       this.state = {
         imageSrc: Gloves,
@@ -36,7 +36,7 @@ class RawMaterials extends React.Component {
     } else if(this.props.material==="Jeans"){
       this.state = {
         imageSrc: PileOfJeans,
-        imageDescription: 'Pile of Jeans'
+        imageDescription: 'Denim'
       };
     } else{
       this.state = {

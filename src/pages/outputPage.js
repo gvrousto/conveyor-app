@@ -1,6 +1,10 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 import BaseballGloveParka from "../outputImages/baseball_gloves_parka.png";
+import FabricSamples from "../outputImages/fabric_samples_poncho.png";
+import KiddLeatherGloves from "../outputImages/Kidd_leather_gloves_tote_bag.png";
+import MilitarySurplus from "../outputImages/military_surplus_shirts.png";
+import PileOfJeans from "../outputImages/Pile-of-jeans_coaches_jacket.png";
 import './style/selectPage.css'
 import './style/outputPage.css'
 
@@ -9,35 +13,41 @@ class OutputPage extends React.Component{
 
   constructor(props){
     super(props);
-    console.log(this.props);
-    if(this.props.material==="BaseballGloveParka"){
+    console.log(this.props.match.params.material);
+    if(this.props.match.params.material==="BaseballGloveParka"){
       this.state = {
-        imageSrc: BaseballGloveParka,
-        imageDescription: 'Baseball Gloves'
+        imageSrc: BaseballGloveParka
       };
-    } else if(this.props.material==="CottonLace"){
+    } else if(this.props.match.params.material==="FabricSamples"){
       this.state = {
-        imageSrc: '',
-        imageDescription: 'Cotton Lace'
+        imageSrc: FabricSamples
+      };
+    } else if(this.props.match.params.material==="MilitarySurplus"){
+      this.state = {
+        imageSrc: MilitarySurplus
+      };
+    } else if(this.props.match.params.material==="Jeans"){
+      this.state = {
+        imageSrc: PileOfJeans
       };
     } else{
       this.state = {
-        imageSrc: BaseballGloveParka
+        imageSrc: KiddLeatherGloves
       };
     }
   }
 
   render(){
-    let material = this.props.match.params.material;
+    let materialName = this.props.match.params.materialName;
     let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
     let status = " COMPLETE";
     return(
     <div className="d-flex flex-column">
-      <div className="d-flex justify-content-around bd-highlight">
+      <div className="d-flex justify-content-center bd-highlight">
         <div className="clothing-attribute-container">
           <div className="attribute">
-            Raw Material: {material}
+            Raw Material: {materialName}
           </div>
           <div className="attribute">
             Vector Selection: {vector}

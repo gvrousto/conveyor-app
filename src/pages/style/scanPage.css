@@ -1,6 +1,4 @@
 .webcam-header{
-  padding-top: 25px;
-  padding-bottom: 10px;
   font-size: 45px;
   font-family: monospace;
 }
@@ -10,6 +8,6 @@
 }
 
 .shapes-container{
-  height: 800px;
-  width: 800px;
+  height: 575px;
+  width: 575px;
 }

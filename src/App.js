@@ -12,7 +12,7 @@ function App() {
       <div>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>
-        <Route exact path='/output/:material/:vector/:size' component={OutputPage}/>
+        <Route exact path='/output/:materialName/:vector/:size/:material' component={OutputPage}/>
       </div>
       {/* <Routes/> Passing global state info and function references to the rest of the app */}
     </HashRouter>

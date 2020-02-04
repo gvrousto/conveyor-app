@@ -11,3 +11,15 @@
 .custom-control-input-style:hover{
   cursor: pointer;
 }
+
+.radio-buttons-header{
+  padding-top: 75px;
+}
+
+.radio-buttons-container{
+  padding-top: 10px;
+}
+
+.full-container{
+  text-align: center;
+}

@@ -10,31 +10,31 @@ class SelectPage extends React.Component{
     <div className="d-flex flex-column justify-content-center webcam-container">
       <div className="d-flex justify-content-center webcam-header">Input Materials</div>
       <div className="d-flex justify-content-center">
-        <Webcam className="d-flex webcam-header" height={800}/>
+        <Webcam className="d-flex webcam-header" height={550}/>
         <div className="stacked-div shapes-container">
           <div className="stacked-div">
-            <Line x1={50} x2={300} y1={200} y2={200} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={90} x2={200} y1={150} y2={150} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={65} x2={65} y1={200} y2={350} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={100} x2={100} y1={150} y2={250} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={750} x2={500} y1={200} y2={200} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={365} x2={461} y1={150} y2={150} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={735} x2={735} y1={200} y2={350} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={450} x2={450} y1={150} y2={250} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={50} x2={300} y1={600} y2={600} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={90} x2={200} y1={400} y2={400} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={65} x2={65} y1={450} y2={600} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={100} x2={100} y1={300} y2={400} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={750} x2={500} y1={600} y2={600} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={350} x2={461} y1={400} y2={400} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
           <div className="stacked-div">
-            <Line x1={735} x2={735} y1={450} y2={600} stroke={{color:'#E65243'}} strokeWidth={30} />
+            <Line x1={450} x2={450} y1={300} y2={400} stroke={{color:'#E65243'}} strokeWidth={20} />
           </div>
         </div>
       </div>
