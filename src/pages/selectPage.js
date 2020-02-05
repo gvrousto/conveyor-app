@@ -3,10 +3,18 @@ import SelectOutput from '../components/selectOutput'
 import RadioButtons from '../components/radioButtons'
 import RawMaterials from '../components/rawMaterials'
 import Button from 'react-bootstrap/Button'
+
+import { Redirect } from 'react-router-dom'
+
 import './style/selectPage.css'
 
 
 class SelectPage extends React.Component{
+
+  redirectOnClick(){
+    window.location.assign('#/load');
+  }
+
   render(){
     let material = this.props.match.params.material;
     return(
@@ -19,7 +27,7 @@ class SelectPage extends React.Component{
         <div className="selectandbutton-container">
           <SelectOutput/>
           <div className="button-custom-style">
-            <Button variant="success" size="lg">Initiate Binding</Button>
+            <Button variant="success" onClick={this.redirectOnClick} size="lg">Initiate Binding</Button>
           </div>
         </div>
       </div>
