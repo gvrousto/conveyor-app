@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/conveyor-app/static/css/main.1787d572.chunk.css",
-    "main.js": "/conveyor-app/static/js/main.fa520e2e.chunk.js",
-    "main.js.map": "/conveyor-app/static/js/main.fa520e2e.chunk.js.map",
+    "main.css": "/conveyor-app/static/css/main.a0d91b70.chunk.css",
+    "main.js": "/conveyor-app/static/js/main.93f14707.chunk.js",
+    "main.js.map": "/conveyor-app/static/js/main.93f14707.chunk.js.map",
     "runtime-main.js": "/conveyor-app/static/js/runtime-main.1ae8cf98.js",
     "runtime-main.js.map": "/conveyor-app/static/js/runtime-main.1ae8cf98.js.map",
     "static/css/2.47e06e2e.chunk.css": "/conveyor-app/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.05ace34c.chunk.js": "/conveyor-app/static/js/2.05ace34c.chunk.js",
-    "static/js/2.05ace34c.chunk.js.map": "/conveyor-app/static/js/2.05ace34c.chunk.js.map",
+    "static/js/2.b4c6005e.chunk.js": "/conveyor-app/static/js/2.b4c6005e.chunk.js",
+    "static/js/2.b4c6005e.chunk.js.map": "/conveyor-app/static/js/2.b4c6005e.chunk.js.map",
     "index.html": "/conveyor-app/index.html",
-    "precache-manifest.58c072fc552168bf5cd288ed39de33a7.js": "/conveyor-app/precache-manifest.58c072fc552168bf5cd288ed39de33a7.js",
+    "precache-manifest.b4142a922bb005e2d14a664dd93f88ad.js": "/conveyor-app/precache-manifest.b4142a922bb005e2d14a664dd93f88ad.js",
     "service-worker.js": "/conveyor-app/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/conveyor-app/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.1787d572.chunk.css.map": "/conveyor-app/static/css/main.1787d572.chunk.css.map",
-    "static/js/2.05ace34c.chunk.js.LICENSE": "/conveyor-app/static/js/2.05ace34c.chunk.js.LICENSE",
+    "static/css/main.a0d91b70.chunk.css.map": "/conveyor-app/static/css/main.a0d91b70.chunk.css.map",
+    "static/js/2.b4c6005e.chunk.js.LICENSE": "/conveyor-app/static/js/2.b4c6005e.chunk.js.LICENSE",
     "static/media/Kidd_leather_gloves_tote_bag.png": "/conveyor-app/static/media/Kidd_leather_gloves_tote_bag.fdfcc955.png",
     "static/media/Pile-of-jeans_coaches_jacket.png": "/conveyor-app/static/media/Pile-of-jeans_coaches_jacket.7a517a49.png",
     "static/media/baseball_gloves.png": "/conveyor-app/static/media/baseball_gloves.5a78d8fb.png",
@@ -47,8 +47,8 @@
   "entrypoints": [
     "static/js/runtime-main.1ae8cf98.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.05ace34c.chunk.js",
-    "static/css/main.1787d572.chunk.css",
-    "static/js/main.fa520e2e.chunk.js"
+    "static/js/2.b4c6005e.chunk.js",
+    "static/css/main.a0d91b70.chunk.css",
+    "static/js/main.93f14707.chunk.js"
   ]
 }
