@@ -11,16 +11,7 @@
 *{
   box-sizing:border-box;
 }
-html {height:100%;}
-body {
-  background-color:#cecbc4;
-  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #fbfbfb), color-stop(100%, #cecbc4));
-  background-image: -webkit-linear-gradient(top, #fbfbfb 0%, #cecbc4 100%);
-  background-image: -moz-linear-gradient(top, #fbfbfb 0%, #cecbc4 100%);
-  background-image: -ms-linear-gradient(top, #fbfbfb 0%, #cecbc4 100%);
-  background-image: -o-linear-gradient(top, #fbfbfb 0%, #cecbc4 100%);
-  background-image: linear-gradient(to bottom, #fbfbfb 0%, #cecbc4 100%);
-}
+
 div#loader_container {
   width:300px;
   margin:50px auto;
