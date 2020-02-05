@@ -15,24 +15,48 @@ class LoadPage extends React.Component{
 
   componentDidMount(){
     setInterval( () => {
-      let newState = {
-        progress: this.state.progress + Math.round(Math.random() * 10)
+      if (this.state.progress<=100){
+        if (this.state.progress>10) {
+          console.log(this.state.progress);
+        }
+        let newState = {
+          progress: this.state.progress + 1
+        }
+        this.setState(newState);
       }
-      this.setState(newState)
-    }, 700);
+      else {
+      }
+    },600);
   }
 
   render(){
     return(
       <div className="d-flex justify-content-center align-items-center main-container">
         <div className="progressbar-container">
-          <ProgressBar now={this.state.progress} />
-          <ProgressBar now={this.state.progress} />
-          <ProgressBar now={this.state.progress} />
+
+
+        <div id="bar_container">
+          <div style={{width: this.state.progress + '%'}} id="progress_bar">
+          <div id="progress_percentage">
+            {this.state.progress}%
+          </div>
+          </div>
+          </div>
+
+          <div id="text_container">
+          Loading
+          <span>Please Wait...</span>
+        </div>
+
+<div id="loader_container">
+</div>
+
+
         </div>
       </div>
     );
   }
 }
 
+  // <ProgressBar height="150px" now={this.state.progress} />
 export default LoadPage;

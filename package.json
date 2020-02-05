@@ -15,7 +15,9 @@
     "react-scripts": "3.3.0",
     "react-scroll": "^1.7.15",
     "react-shapes": "^0.1.0",
-    "react-webcam": "^4.1.1"
+    "react-webcam": "^4.1.1",
+    "react95": "^2.0.0",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
