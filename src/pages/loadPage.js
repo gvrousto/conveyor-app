@@ -1,5 +1,4 @@
 import React from 'react';
-import ProgressBar from 'react-bootstrap/ProgressBar'
 
 import './style/loadPage.css'
 
@@ -33,8 +32,6 @@ class LoadPage extends React.Component{
     return(
       <div className="d-flex justify-content-center align-items-center main-container">
         <div className="progressbar-container">
-
-
         <div id="bar_container">
           <div style={{width: this.state.progress + '%'}} id="progress_bar">
           <div id="progress_percentage">
@@ -47,16 +44,10 @@ class LoadPage extends React.Component{
           Loading
           <span>Please Wait...</span>
         </div>
-
-<div id="loader_container">
-</div>
-
-
         </div>
       </div>
     );
   }
 }
 
-  // <ProgressBar height="150px" now={this.state.progress} />
 export default LoadPage;
