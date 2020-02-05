@@ -26,9 +26,9 @@ class LoadPage extends React.Component{
     return(
       <div className="d-flex justify-content-center align-items-center main-container">
         <div className="progressbar-container">
-          <ProgressBar striped animated variant="danger" height="150px" now={this.state.progress} />
-          <ProgressBar striped animated variant="danger" height="150px" now={this.state.progress} />
-          <ProgressBar striped animated variant="danger" height="150px" now={this.state.progress} />
+          <ProgressBar now={this.state.progress} />
+          <ProgressBar now={this.state.progress} />
+          <ProgressBar now={this.state.progress} />
         </div>
       </div>
     );

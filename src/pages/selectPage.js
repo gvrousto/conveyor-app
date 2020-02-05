@@ -4,8 +4,6 @@ import RadioButtons from '../components/radioButtons'
 import RawMaterials from '../components/rawMaterials'
 import Button from 'react-bootstrap/Button'
 
-import { Redirect } from 'react-router-dom'
-
 import './style/selectPage.css'
 
 
