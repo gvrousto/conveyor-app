@@ -39,11 +39,6 @@ class LoadPage extends React.Component{
           </div>
           </div>
           </div>
-
-          <div id="text_container">
-          Loading
-          <span>Please Wait...</span>
-        </div>
         </div>
       </div>
     );
