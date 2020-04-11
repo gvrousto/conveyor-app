@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route} from "react-router-dom";
+import { HashRouter, Route, Redirect } from "react-router-dom";
 import SelectPage from './pages/selectPage';
 import LoadPage from './pages/loadPage';
 import ScanPage from './pages/scanPage';
@@ -11,6 +11,7 @@ function App() {
   return (
     <HashRouter>
       <div>
+        <Redirect exact from='/' to='scan'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>
         <Route exact path='/load' component={LoadPage}/>
