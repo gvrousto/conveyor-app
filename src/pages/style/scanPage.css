@@ -8,8 +8,13 @@
 }
 
 .shapes-container{
-  height: 550px;
-  width: 575px;
+  height: 650px;
+  width: 650px;
+}
+
+.lines-container{
+  height: 250px;
+  width: 370px;
 }
 
 .button-text{
