@@ -1,6 +1,5 @@
 import React from 'react';
 import {Line} from 'react-shapes';
-import Webcam from "react-webcam";
 import { Button } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import './style/scanPage.css'
