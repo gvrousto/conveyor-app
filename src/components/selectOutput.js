@@ -26,20 +26,17 @@ import './style/selectOutput.css';
 
 class SelectOutput extends React.Component{
 
-state = {
-  vectorClicked: ""
-}
+  constructor(props){
+    super(props);
+  }
+
 
   handleClick(vector){
-    if(vector === this.state.vectorClicked){
-      this.setState({vectorClicked: ""});
-    } else{
-      this.setState({vectorClicked: vector});
-    }
+    this.props.handleVectorClicked(vector);
   }
 
   isClicked(vector){
-    if(this.state.vectorClicked === vector){
+    if(this.props.vectorClicked === vector){
       return "clothing-vector-image-clicked";
     } else{
       return "clothing-vector-image";

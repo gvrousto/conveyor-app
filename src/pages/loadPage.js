@@ -19,7 +19,7 @@ class LoadPage extends React.Component{
           console.log(this.state.progress);
         }
         let newState = {
-          progress: this.state.progress + 1
+          progress: this.state.progress + 100
         }
         this.setState(newState);
       }
@@ -29,6 +29,7 @@ class LoadPage extends React.Component{
   }
 
   render(){
+    console.log(this.props.match.params);
     return(
       <div className="d-flex justify-content-center align-items-center main-container">
         <div className="progressbar-container">

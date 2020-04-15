@@ -14,7 +14,7 @@ function App() {
         <Redirect exact from='/' to='scan'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>
-        <Route exact path='/load' component={LoadPage}/>
+        <Route exact path='/load/:material/:vector/:size' component={LoadPage}/>
         <Route exact path='/output/:materialName/:vector/:size/:material' component={OutputPage}/>
       </div>
       {/* <Routes/> Passing global state info and function references to the rest of the app */}
