@@ -1,0 +1,16 @@
+.select-material-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-material-header-container{
+  margin-bottom: 30px;
+}
+
+.select-material-list-container{
+  width:300px;
+}
