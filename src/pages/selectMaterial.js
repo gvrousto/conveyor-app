@@ -9,18 +9,58 @@ function alertClicked() {
 }
 
 function MaterialListGroup(){
+  const columnHeaders = [
+    {
+      field: 'icon',
+      label: 'Icon',
+    },
+    {
+      field: 'material',
+      label: 'City',
+    },
+    {
+      field: 'address.state',
+      label: 'State',
+    },
+  ];
+
+  const columnContents =
+    [
+      {
+        field: 'icon',
+        label: 'Gloves Image'
+      },
+      {
+        field: 'material',
+        label: 'Baseball Gloves'
+      },
+      {
+        field: 'cuck',
+        label: 'cuck'
+      }
+    ]
   return(
-    <ListGroup className="select-material-list-container" defaultActiveKey="#link1">
-      <ListGroup.Item action href="#link1">
-        Link 1
-      </ListGroup.Item>
-      <ListGroup.Item action href="#link2" disabled>
-        Link 2
-      </ListGroup.Item>
-      <ListGroup.Item action onClick={alertClicked}>
-        This one is a button
-      </ListGroup.Item>
-    </ListGroup>
+    <table className="table table-striped table-hover">
+      <thead>
+        <tr>
+          {columnHeaders.map(({ field, label }) => (
+            <th key={field}>{label}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {columnContents.map(({ field, label }) => (
+            <th key={field}>{label}</th>
+          ))}
+        </tr>
+        <tr>
+          {columnContents.map(({ field, label }) => (
+            <th key={field}>{label}</th>
+          ))}
+        </tr>
+      </tbody>
+    </table>
   );
 }
 
@@ -38,7 +78,7 @@ export default class SelectMaterial extends React.Component{
         </div>
         { MaterialListGroup() }
         <Link to="/select/Jeans">
-          <Button>Hello Mother</Button>
+          <Button>Proceed</Button>
         </Link>
       </div>
     );
