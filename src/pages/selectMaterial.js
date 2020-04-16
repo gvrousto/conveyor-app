@@ -34,7 +34,7 @@ export default class SelectMaterial extends React.Component{
     return(
       <div className="select-material-container">
         <div className="select-material-header-container">
-          Select Your Material
+          Materials Library
         </div>
         { MaterialListGroup() }
         <Link to="/select/Jeans">
