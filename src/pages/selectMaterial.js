@@ -14,13 +14,9 @@ export default class SelectMaterial extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      material: ''
+      material: 'Jeans'
     }
     this.selectMaterial = this.selectMaterial.bind(this);
-  }
-
-  redirectOnClick(){
-    window.location.assign(`#/select/Jeans`);
   }
 
   selectMaterial(material){
@@ -31,13 +27,14 @@ export default class SelectMaterial extends React.Component{
   }
 
   render(){
+    let redirectPath = "/select/"+this.state.material;
     return(
       <div className="select-material-container">
         <div className="select-material-header-container">
           Materials Library
         </div>
         <MaterialListGroup selectMaterial={this.selectMaterial}/>
-        <Link to="/select/Jeans">
+        <Link to={redirectPath}>
           <Button>Proceed</Button>
         </Link>
       </div>
