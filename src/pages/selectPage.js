@@ -3,6 +3,8 @@ import SelectOutput from '../components/selectOutput'
 import RadioButtons from '../components/radioButtons'
 import RawMaterials from '../components/rawMaterials'
 import Button from 'react-bootstrap/Button'
+import {Link} from 'react-router-dom';
+
 
 import './style/selectPage.css'
 
@@ -53,9 +55,8 @@ class SelectPage extends React.Component{
   render(){
     let material = this.props.match.params.material;
     let buttonMessage = this.createButtonMessage();
-    console.log(this.state.size);
-    console.log(this.state.material);
-    console.log(buttonMessage);
+
+    let path = `/load/${this.state.material}/${this.state.vectorClicked}/${this.state.size}`;
     return(
     <div className="d-flex flex-column">
       <div className="d-flex justify-content-around bd-highlight">
@@ -74,8 +75,10 @@ class SelectPage extends React.Component{
             />
           <div className="button-custom-style">
             { buttonMessage }
+            <Link to={path}>
             <Button disabled={this.isButtonDisabled()} variant="success" onClick={this.redirectOnClick} size="lg">Initiate Binding</Button>
-          </div>
+            </Link>
+        </div>
         </div>
       </div>
     </div>

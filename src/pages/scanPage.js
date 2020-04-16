@@ -2,6 +2,7 @@ import React from 'react';
 import {Line} from 'react-shapes';
 import { Button } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
+import {Link} from 'react-router-dom';
 import './style/scanPage.css'
 
 
@@ -42,9 +43,11 @@ class ScanPage extends React.Component{
             </div>
           </div>
           <div className="stacked-div">
-            <Button className="button-text" href="#/select/Gloves" variant="danger" size="lg">
+          <Link to="/material">
+            <Button className="button-text" variant="danger" size="lg">
               Visit Collection
             </Button>
+          </Link>
           </div>
         </div>
       </div>

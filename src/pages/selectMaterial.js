@@ -1,6 +1,7 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
+import {Link} from 'react-router-dom';
 import './style/selectMaterial.css'
 
 function alertClicked() {
@@ -36,7 +37,9 @@ export default class SelectMaterial extends React.Component{
           Select Your Material
         </div>
         { MaterialListGroup() }
-        <Button onClick={this.redirectOnClick}>Hello Mother</Button>
+        <Link to="/select/Jeans">
+          <Button>Hello Mother</Button>
+        </Link>
       </div>
     );
   }
