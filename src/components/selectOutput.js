@@ -1,5 +1,4 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 import Image from 'react-bootstrap/Image';
 
 import Blazer from "../vectorImages/blazer.png";

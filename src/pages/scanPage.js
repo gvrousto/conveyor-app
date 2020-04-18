@@ -8,6 +8,13 @@ import './style/scanPage.css'
 
 class ScanPage extends React.Component{
   render(){
+    //const isMobile = useMediaQuery({ query: '(max-width: 425px)' });
+    // let height = "800";
+    // let width = "600";
+    // if(isMobile){
+    //   height = "200";
+    //   width = "100";
+    // }
     return(
       <div className="scan-page-container">
         <div className="scan-header">
@@ -15,7 +22,7 @@ class ScanPage extends React.Component{
         </div>
         <div className="scan-container">
           <div className="shapes-container">
-            <ReactPlayer className="video-container" url='https://youtu.be/Xlasn8_mrwQ?start=207&end=241' playing />
+            <ReactPlayer  className="video-container" url='https://youtu.be/Xlasn8_mrwQ?start=207&end=241' playing />
           </div>
         </div>
       </div>
