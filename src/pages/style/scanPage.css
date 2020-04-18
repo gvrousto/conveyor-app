@@ -48,7 +48,7 @@
     justify-content: center;
   }
   .shapes-container{
-    height: 416px;
+    height: 365px;
     width: 360px;
     display: flex;
     justify-content: center;
@@ -57,5 +57,10 @@
   .scan-header{
     font-size: 30px;
     font-family: monospace;
+  }
+  .scan-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
