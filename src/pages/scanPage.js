@@ -26,17 +26,18 @@ class ScanPage extends React.Component{
           </div>
         </div>
       </div>
+    </div>
     );
   }
 }
 
 // <div className="d-flex flex-column justify-content-center webcam-container">
-//   <div className="d-flex justify-content-center scan-header">
+//   <div className="d-flex justify-content-center webcam-header">
 //     Input Materials
 //   </div>
-//   <div className="d-flex justify-content-center scan-container">
+//   <div className="d-flex justify-content-center">
 //     <div className="d-flex justify-content-center align-items-center shapes-container">
-//       <ReactPlayer className="video-container" url='https://youtu.be/Xlasn8_mrwQ?start=207&end=241' playing />
+//       <ReactPlayer height={650} url='https://youtu.be/Xlasn8_mrwQ?start=207&end=241' playing />
 //       <div className="stacked-div lines-container">
 //         <div className="stacked-div">
 //           <Line x1={0} x2={110} y1={10} y2={10} stroke={{color:'#E65243'}} strokeWidth={20} />
@@ -69,10 +70,5 @@ class ScanPage extends React.Component{
 //           Visit Collection
 //         </Button>
 //       </Link>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-
 
 export default ScanPage;
