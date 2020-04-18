@@ -1,6 +1,19 @@
-.webcam-header{
+.scan-page-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scan-header{
+  display: flex;
+  justify-content: center;
   font-size: 45px;
   font-family: monospace;
+}
+
+.scan-container{
+  display: flex;
+  justify-content: center;
 }
 
 .stacked-div{
@@ -9,14 +22,40 @@
 
 .shapes-container{
   height: 650px;
-  width: 650px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container{
+  height: 500px;
+  width: 700px;
 }
 
 .lines-container{
-  height: 250px;
-  width: 370px;
+  height: 240px;
+  width: 320px;
 }
 
 .button-text{
   font-family: monospace;
+}
+
+@media only screen and (max-device-width : 425px) {
+  .scan-container{
+    display: flex;
+    justify-content: center;
+  }
+  .shapes-container{
+    height: 416px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .scan-header{
+    font-size: 30px;
+    font-family: monospace;
+  }
 }
