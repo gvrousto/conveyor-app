@@ -26,7 +26,6 @@ class ScanPage extends React.Component{
           </div>
         </div>
       </div>
-    </div>
     );
   }
 }
