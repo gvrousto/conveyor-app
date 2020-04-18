@@ -1,7 +1,6 @@
 import React from 'react';
 import {Line} from 'react-shapes';
 import { Button } from 'react-bootstrap';
-import { useMediaQuery } from 'react-responsive';
 import ReactPlayer from 'react-player';
 import {Link} from 'react-router-dom';
 import './style/scanPage.css'
