@@ -17,9 +17,14 @@
   justify-content: center;
 }
 
+.clothing-vector-image{
+  width: 200px;
+}
+
 .clothing-vector-image-clicked{
   background-color: #fff;
   box-shadow: 0px 0px 10px 5px #E65243;
+  width:200px;
 }
 
 .radio-buttons-header{
@@ -27,7 +32,7 @@
   font-family: monospace;
 }
 
-.scrolling-container{
+.clothing-vectors-column-container{
   display: flex;
   flex-direction: row;
 }
@@ -37,9 +42,27 @@
   flex-direction: column;
 }
 
+.scrolling-container{
+  position: relative;
+  height: 500px;
+  overflow: scroll;
+}
+
 @media only screen and (max-device-width : 425px) {
-  .scrolling-container{
+  .clothing-vectors-column-container{
     display: flex;
     flex-direction: column;
+  }
+  .scrolling-container{
+    position: relative;
+    height: 300px;
+    overflow: scroll;
+  }
+  .clothing-vector-unit{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
