@@ -46,7 +46,7 @@ class SelectPage extends React.Component{
 
   createButtonMessage(){
     if(this.isButtonDisabled()){
-      return(<div>Please select size and vector</div>);
+      return(<div className="button-header">Please select size and vector</div>);
     } else {
       return;
     }
@@ -73,10 +73,14 @@ class SelectPage extends React.Component{
             handleVectorClicked={this.handleVectorClicked}
             vectorClicked={this.state.vectorClicked}
             />
-          <div className="button-custom-style">
+          <div className="button-container">
             { buttonMessage }
             <Link to={path}>
-            <Button disabled={this.isButtonDisabled()} variant="success" onClick={this.redirectOnClick} size="lg">Initiate Binding</Button>
+              <Button className="button-custom-style" disabled={this.isButtonDisabled()} variant="success" onClick={this.redirectOnClick} >
+                  <div className="button-text">
+                    Initiate Binding
+                  </div>
+              </Button>
             </Link>
         </div>
         </div>

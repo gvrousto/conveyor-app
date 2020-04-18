@@ -1,13 +1,40 @@
-.button-custom-style{
+.button-container{
   padding-top: 100px;
   font-family: monospace;
+}
+
+.button-custom-style{
+  height: 50px;
+  width: 230px;
 }
 
 .selectandbutton-container{
   text-align: center;
 }
 
-@media only screen and (min-device-width : 425px) {
-  
+.button-header{
+  font-family: monospace;
+  font-size: 10px;
+}
 
+.button-text{
+  font-size: 17px;
+}
+
+@media only screen and (max-device-width : 425px) {
+  .button-container{
+    font-family: monospace;
+    padding-top: 10px;
+  }
+  .button-custom-style{
+    height: 42px;
+    width: 160px;
+  }
+  .button-text{
+    font-size: 10px;
+  }
+  .button-header{
+    font-family: monospace;
+    font-size: 8px;
+  }
 }

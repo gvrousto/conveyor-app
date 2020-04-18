@@ -8,19 +8,24 @@
   cursor: pointer;
 }
 
-.custom-control-input-style:hover{
+.custom-control-input{
+  cursor: pointer;
+  height: 4em;
+  width: 4em;
+}
+
+.custom-control-input:hover{
   cursor: pointer;
 }
 
-.radio-buttons-header{
-  padding-top: 75px;
-}
 
-.radio-buttons-container{
-  padding-top: 20px;
-}
-
-.full-container{
-  text-align: center;
-  height: 200;
+@media only screen and (max-device-width : 425px) {
+  .radio-button-unit{
+    padding-right: 7px;
+    font-family: monospace;
+    font-size: 10px;
+  }
+  .custom-control-input{
+    size: 10px;
+  }
 }

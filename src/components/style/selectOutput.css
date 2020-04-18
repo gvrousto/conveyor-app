@@ -45,6 +45,7 @@
 .scrolling-container{
   position: relative;
   height: 500px;
+  width: 720px;
   overflow: scroll;
 }
 
@@ -57,16 +58,17 @@
     position: relative;
     height: 300px;
     overflow: scroll;
+    width: 160px;
   }
   .clothing-vector-unit{
-    width: 160px;
-    height: 230px;
+    width: 150px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .clothing-vector-image{
-    width: 140px;
+    width: 130px;
   }
   .clothing-vector-image-clicked{
     background-color: #fff;
