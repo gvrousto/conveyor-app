@@ -25,4 +25,16 @@
   .raw-materials-image{
     width:160px;
   }
+  .raw-materials-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-family: monospace;
+  }
+  .raw-materials-footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: monospace;
+  }
 }

@@ -59,10 +59,24 @@
     overflow: scroll;
   }
   .clothing-vector-unit{
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .clothing-vector-image{
+    width: 140px;
+  }
+  .clothing-vector-image-clicked{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 5px #E65243;
+    width: 140px;
+  }
+  .select-output-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: 17px;
   }
 }
