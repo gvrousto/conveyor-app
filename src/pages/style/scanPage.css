@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:100%;
+  height:100vh;
 }
 
 .scan-header{
@@ -62,10 +62,9 @@
     font-family: monospace;
   }
   .scan-page-container{
+    padding-top: 90px;
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 }
