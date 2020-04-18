@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/conveyor-app/static/css/main.3211edd3.chunk.css",
+    "main.css": "/conveyor-app/static/css/main.ee493c60.chunk.css",
     "main.js": "/conveyor-app/static/js/main.69fe3d32.chunk.js",
     "main.js.map": "/conveyor-app/static/js/main.69fe3d32.chunk.js.map",
     "runtime-main.js": "/conveyor-app/static/js/runtime-main.1ae8cf98.js",
@@ -9,10 +9,10 @@
     "static/js/2.d73ccccb.chunk.js": "/conveyor-app/static/js/2.d73ccccb.chunk.js",
     "static/js/2.d73ccccb.chunk.js.map": "/conveyor-app/static/js/2.d73ccccb.chunk.js.map",
     "index.html": "/conveyor-app/index.html",
-    "precache-manifest.e3b73e6eeac73517610d186a6c36181d.js": "/conveyor-app/precache-manifest.e3b73e6eeac73517610d186a6c36181d.js",
+    "precache-manifest.9eade770eaa8e7be0cacdd7da19bcec3.js": "/conveyor-app/precache-manifest.9eade770eaa8e7be0cacdd7da19bcec3.js",
     "service-worker.js": "/conveyor-app/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/conveyor-app/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.3211edd3.chunk.css.map": "/conveyor-app/static/css/main.3211edd3.chunk.css.map",
+    "static/css/main.ee493c60.chunk.css.map": "/conveyor-app/static/css/main.ee493c60.chunk.css.map",
     "static/js/2.d73ccccb.chunk.js.LICENSE": "/conveyor-app/static/js/2.d73ccccb.chunk.js.LICENSE",
     "static/media/Kidd_leather_gloves_tote_bag.png": "/conveyor-app/static/media/Kidd_leather_gloves_tote_bag.fdfcc955.png",
     "static/media/Pile-of-jeans_coaches_jacket.png": "/conveyor-app/static/media/Pile-of-jeans_coaches_jacket.7a517a49.png",
@@ -48,7 +48,7 @@
     "static/js/runtime-main.1ae8cf98.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.d73ccccb.chunk.js",
-    "static/css/main.3211edd3.chunk.css",
+    "static/css/main.ee493c60.chunk.css",
     "static/js/main.69fe3d32.chunk.js"
   ]
 }
