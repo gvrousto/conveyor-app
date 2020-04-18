@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:100%;
+  height:100vh;
 }
 
 .scan-header{
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
   font-size: 45px;
@@ -57,12 +58,13 @@
     align-items: center;
   }
   .scan-header{
+    padding-bottom: 10px;
     font-size: 30px;
     font-family: monospace;
   }
   .scan-page-container{
     display: flex;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
