@@ -50,7 +50,7 @@ class RawMaterials extends React.Component {
     return(
     <div className="raw-materials-container">
       <div className="raw-materials-header">Raw Materials</div>
-      <Image src={this.state.imageSrc} width="550px"/>
+      <Image className="raw-materials-image" src={this.state.imageSrc} />
       <div className="raw-materials-footer">{this.state.imageDescription}</div>
     </div>
   );

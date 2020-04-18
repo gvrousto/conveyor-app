@@ -26,3 +26,20 @@
   font-size: 35px;
   font-family: monospace;
 }
+
+.scrolling-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.clothing-vectors-container{
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-device-width : 425px) {
+  .scrolling-container{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.raw-materials-image{
+  width:550px;
+}
+
 .raw-materials-header{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -14,4 +18,11 @@
   padding-bottom: 20px;
   font-size: 35px;
   font-family: monospace;
+}
+
+
+@media only screen and (max-device-width : 425px) {
+  .raw-materials-image{
+    width:160px;
+  }
 }

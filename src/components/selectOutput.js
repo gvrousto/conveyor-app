@@ -26,11 +26,6 @@ import './style/selectOutput.css';
 
 class SelectOutput extends React.Component{
 
-  constructor(props){
-    super(props);
-  }
-
-
   handleClick(vector){
     this.props.handleVectorClicked(vector);
   }
@@ -53,8 +48,8 @@ class SelectOutput extends React.Component{
           height: '500px',
           overflow: 'scroll'
         }}>
-          <div className="d-flex flex-row">
-            <div className="clothing-vectors-container d-flex flex-column">
+          <div className="scrolling-container">
+            <div className="clothing-vectors-container">
               <div className= "clothing-vector-unit">
                 <Image
                   className={this.isClicked("CoachesJacket")}
@@ -119,7 +114,7 @@ class SelectOutput extends React.Component{
                   onClick={() => this.handleClick("RugbyShirt")}/>
               </div>
             </div>
-            <div className="clothing-vectors-container d-flex flex-column">
+            <div className="clothing-vectors-container">
             <div className= "clothing-vector-unit">
               <Image
                 className={this.isClicked("ShortPants")}

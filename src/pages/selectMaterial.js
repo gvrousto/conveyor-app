@@ -1,13 +1,8 @@
 import React from 'react';
-import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
 import {Link} from 'react-router-dom';
 import MaterialListGroup from '../components/materialTable';
 import './style/selectMaterial.css'
-
-function alertClicked() {
-  alert('You clicked the third ListGroupItem');
-}
 
 export default class SelectMaterial extends React.Component{
 
@@ -21,12 +16,13 @@ export default class SelectMaterial extends React.Component{
 
   selectMaterial(material){
     console.log("HI CALVIN");
-    // this.setState({
-    //   material: material
-    // });
+    this.setState({
+      material: material
+    });
   }
 
   render(){
+    console.log(this.state.material);
     let redirectPath = "/select/"+this.state.material;
     return(
       <div className="select-material-container">
