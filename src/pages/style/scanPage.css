@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  height:100%;
 }
 
 .scan-header{
@@ -63,7 +63,7 @@
   }
   .scan-page-container{
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
