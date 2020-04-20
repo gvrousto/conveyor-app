@@ -11,50 +11,68 @@ import VictorianGloves from "../materialIcons/VictorianGloves.jpg";
 import Yarn from "../materialIcons/yarn.jpg";
 
 
+const columnContents =
+  [
+    {
+      material: 'Baseball Gloves',
+      imageSrc: Gloves
+    },
+    {
+      material: 'Lace',
+      imageSrc: Lace
+    },
+    {
+      material: 'Cotton',
+      imageSrc: Cotton
+    },
+    {
+      material: 'Denim',
+      imageSrc: Denim
+    },
+    {
+      material: 'Military Surplus Canvas',
+      imageSrc: MilitarySurplus
+    },
+    {
+      material: 'Upholstery Samples',
+      imageSrc: Upholstery
+    },
+    {
+      material: 'Victorian Gloves',
+      imageSrc: VictorianGloves
+    },
+    {
+      material: 'Yarn',
+      imageSrc: Yarn
+    }
+  ];
+
+function isClicked(targetMaterial, currentMaterial){
+  if(targetMaterial === currentMaterial){
+    console.log("here");
+    return "row-container-clicked"
+  } else {
+    return "row-container"
+  }
+}
+
+function isMaterialClicked(targetMaterial, currentMaterial){
+  if(targetMaterial === currentMaterial){
+    console.log("here");
+    return "row-material-clicked"
+  } else {
+    return "row-material"
+  }
+}
+
 export default function MaterialListGroup(props){
-  const columnContents =
-    [
-      {
-        material: 'Baseball Gloves',
-        imageSrc: Gloves
-      },
-      {
-        material: 'Lace',
-        imageSrc: Lace
-      },
-      {
-        material: 'Baseball Gloves',
-        imageSrc: Cotton
-      },
-      {
-        material: 'Lace',
-        imageSrc: Denim
-      },
-      {
-        material: 'Baseball Gloves',
-        imageSrc: MilitarySurplus
-      },
-      {
-        material: 'Lace',
-        imageSrc: Upholstery
-      },
-      {
-        material: 'Baseball Gloves',
-        imageSrc: VictorianGloves
-      },
-      {
-        material: 'Lace',
-        imageSrc: Yarn
-      }
-    ];
 
   let materialTableRows = columnContents.map(({material, imageSrc})=>{
-    console.log(imageSrc);
     return(
       <tr onClick={()=>props.selectMaterial(material)}>
-        <td className="row-container" key={material}>
+        <td className={isClicked(props.material, material)} key={material}>
           <Image className="row-image" src={imageSrc} />
-          <div className="row-material">
+          <div className={isMaterialClicked(props.material, material)}>
             {material}
           </div>
         </td>
@@ -62,7 +80,6 @@ export default function MaterialListGroup(props){
     )
   });
 
-  console.log(materialTableRows);
   return(
     <table className="table table-hover">
       <tbody>

@@ -29,10 +29,10 @@ export default class SelectMaterial extends React.Component{
         <div className="select-material-header">
           Materials Library
         </div>
-        <MaterialListGroup selectMaterial={this.selectMaterial}/>
+        <MaterialListGroup material={this.state.material}selectMaterial={this.selectMaterial}/>
         <div className="material-button-container">
           <Link to={redirectPath}>
-            <Button>Proceed</Button>
+            <Button variant="success">Proceed</Button>
           </Link>
         </div>
       </div>
