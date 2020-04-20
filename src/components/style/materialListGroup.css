@@ -1,0 +1,19 @@
+.row-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row-container:hover{
+  cursor: pointer;
+}
+
+.row-image{
+  height: 60px;
+}
+
+.row-material{
+  padding-left: 30px;
+  font-size: 20px;
+  font-family: monospace;
+}

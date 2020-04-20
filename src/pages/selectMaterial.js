@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import {Link} from 'react-router-dom';
-import MaterialListGroup from '../components/materialTable';
+import MaterialListGroup from '../components/materialListGroup';
 import './style/selectMaterial.css'
 
 export default class SelectMaterial extends React.Component{
@@ -26,13 +26,15 @@ export default class SelectMaterial extends React.Component{
     let redirectPath = "/select/"+this.state.material;
     return(
       <div className="select-material-container">
-        <div className="select-material-header-container">
+        <div className="select-material-header">
           Materials Library
         </div>
         <MaterialListGroup selectMaterial={this.selectMaterial}/>
-        <Link to={redirectPath}>
-          <Button>Proceed</Button>
-        </Link>
+        <div className="material-button-container">
+          <Link to={redirectPath}>
+            <Button>Proceed</Button>
+          </Link>
+        </div>
       </div>
     );
   }
