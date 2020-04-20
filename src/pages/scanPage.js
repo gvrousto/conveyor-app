@@ -15,7 +15,7 @@ class ScanPage extends React.Component{
         </div>
         <div className="scan-container">
           <div className="shapes-container">
-            <ReactPlayer height="100%" width="100%" url='https://youtu.be/Xlasn8_mrwQ?start=207&end=241' playing />
+              <ReactPlayer height="100%" width="100%" url='https://youtu.be/Xlasn8_mrwQ?start=207&end=241' playing />
             <div className="stacked-div lines-container">
               <div className="stacked-div">
                 <Line x1={0} x2={110} y1={10} y2={10} stroke={{color:'#E65243'}} strokeWidth={20} />

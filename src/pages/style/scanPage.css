@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  height:100%;
 }
 
 .scan-header{
+  padding-top: 30px;
   padding-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -24,8 +25,8 @@
 }
 
 .shapes-container{
-  height: 650px;
-  width: 1200px;
+  height: 750px;
+  width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@
     font-family: monospace;
   }
   .scan-page-container{
-    padding-top: 90px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
