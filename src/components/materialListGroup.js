@@ -69,7 +69,7 @@ export default function MaterialListGroup(props){
 
   let materialTableRows = columnContents.map(({material, imageSrc})=>{
     return(
-      <tr onClick={()=>props.selectMaterial(material)}>
+      <tr className="table-container" onClick={()=>props.selectMaterial(material)}>
         <td className={isClicked(props.material, material)} key={material}>
           <Image className="row-image" src={imageSrc} />
           <div className={isMaterialClicked(props.material, material)}>

@@ -9,7 +9,7 @@ export default class SelectMaterial extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      material: 'Jeans'
+      material: ''
     }
     this.selectMaterial = this.selectMaterial.bind(this);
   }
