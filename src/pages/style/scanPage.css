@@ -59,11 +59,12 @@
     align-items: center;
   }
   .scan-header{
+    padding-bottom: 15px;
     font-size: 30px;
     font-family: monospace;
   }
   .scan-page-container{
-    padding-top: 30px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
