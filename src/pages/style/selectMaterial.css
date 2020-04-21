@@ -19,3 +19,7 @@
   justify-content: flex-end;
   font-family: monospace;
 }
+
+.select-material-button{
+  padding-right: 20px;
+}

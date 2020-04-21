@@ -7,14 +7,21 @@ class LoadPage extends React.Component{
   constructor(props){
     super(props);
     this.getShopifyDataByTags = this.getShopifyDataByTags.bind(this);
-    this.state={
-      progress: 10
+    this.state = {
+      progress: 10,
+      shopifyData: ["no"],
+      shopifyCalled: false
     }
   }
 
   componentDidMount(){
     setTimeout(() => {
-      window.location.assign(`#/output/asdf/asdf/asdf/asdf`);
+      console.log("done");
+      this.setState({
+        progress: 10,
+        shopifyData: ["bitch"],
+        shopifyCalled: true
+      });
     }, 9000);
   }
 
@@ -26,12 +33,20 @@ class LoadPage extends React.Component{
   }
 
   render(){
-    console.log(this.props.match.params);
-    return(
-      <div className="d-flex justify-content-center align-items-center main-container">
-        <ReactPlayer height={650} url='https://youtu.be/Xlasn8_mrwQ?start=262&end=270' playing />
-      </div>
-    );
+    console.log(this.state.shopifyData);
+    if(this.state.shopifyCalled === false){
+      return(
+        <div className="d-flex justify-content-center align-items-center main-container">
+          <ReactPlayer height={650} url='https://youtu.be/Xlasn8_mrwQ?start=262&end=270' playing />
+        </div>
+      );
+    } else {
+      return(
+        <div>
+          returned after the data is gotten
+        </div>
+      );
+    }
   }
 }
 

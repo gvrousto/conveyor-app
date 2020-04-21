@@ -15,7 +15,6 @@ export default class SelectMaterial extends React.Component{
   }
 
   selectMaterial(material){
-    console.log("HI CALVIN");
     this.setState({
       material: material
     });
@@ -32,7 +31,9 @@ export default class SelectMaterial extends React.Component{
         <MaterialListGroup material={this.state.material}selectMaterial={this.selectMaterial}/>
         <div className="material-button-container">
           <Link to={redirectPath}>
-            <Button variant="success">Proceed</Button>
+            <div className="select-material-button">
+              <Button size="lg" variant="success">Proceed</Button>
+            </div>
           </Link>
         </div>
       </div>

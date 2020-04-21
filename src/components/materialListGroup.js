@@ -69,13 +69,13 @@ export default function MaterialListGroup(props){
 
   let materialTableRows = columnContents.map(({material, imageSrc})=>{
     return(
-      <tr className="table-container" onClick={()=>props.selectMaterial(material)}>
-        <td className={isClicked(props.material, material)} key={material}>
+      <tr className="table-container noselect" onClick={()=>props.selectMaterial(material)}>
+        <div className={isClicked(props.material, material)} key={material}>
           <Image className="row-image" src={imageSrc} />
-          <div className={isMaterialClicked(props.material, material)}>
+          <div className="row-material">
             {material}
           </div>
-        </td>
+        </div>
       </tr>
     )
   });
