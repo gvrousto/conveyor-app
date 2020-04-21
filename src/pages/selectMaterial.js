@@ -14,14 +14,31 @@ export default class SelectMaterial extends React.Component{
     this.selectMaterial = this.selectMaterial.bind(this);
   }
 
+  isButtonDisabled(){
+    if(this.state.material === ''){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   selectMaterial(material){
     this.setState({
       material: material
     });
   }
 
+  createButtonMessage(){
+    if(this.isButtonDisabled()){
+      return(<div className="button-header">Please select a material</div>);
+    } else {
+      return(<div className="button-header"></div>);
+    }
+  }
+
   render(){
     console.log(this.state.material);
+    let buttonMessage = this.createButtonMessage();
     let redirectPath = "/select/"+this.state.material;
     return(
       <div className="select-material-container">
@@ -30,11 +47,14 @@ export default class SelectMaterial extends React.Component{
         </div>
         <MaterialListGroup material={this.state.material}selectMaterial={this.selectMaterial}/>
         <div className="material-button-container">
-          <Link to={redirectPath}>
-            <div className="select-material-button">
-              <Button size="lg" variant="success">Proceed</Button>
-            </div>
-          </Link>
+          <div className="button-and-header">
+            { buttonMessage }
+            <Link to={redirectPath}>
+              <div className="select-material-button">
+                <Button size="lg" disabled={this.isButtonDisabled()} variant="success">Proceed</Button>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     );

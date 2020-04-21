@@ -26,7 +26,6 @@
   flex-direction: row;
   align-items: center;
   background-color: lightgrey;
-  padding: 0px;
 }
 
 .row-container-clicked:hover{

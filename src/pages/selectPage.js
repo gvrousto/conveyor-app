@@ -46,9 +46,9 @@ class SelectPage extends React.Component{
 
   createButtonMessage(){
     if(this.isButtonDisabled()){
-      return(<div className="button-header">Please select size and vector</div>);
+      return(<div className="button-header">Please select a size and vector</div>);
     } else {
-      return;
+      return(<div className="button-header"></div>);
     }
   }
 
@@ -82,7 +82,7 @@ class SelectPage extends React.Component{
                   </div>
               </Button>
             </Link>
-        </div>
+          </div>
         </div>
       </div>
     </div>

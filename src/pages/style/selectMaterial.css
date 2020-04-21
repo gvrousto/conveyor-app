@@ -20,6 +20,17 @@
   font-family: monospace;
 }
 
+.button-and-header{
+  display: flex;
+  flex-direction: column;
+}
+
+.button-header{
+  color: black;
+  font-size: 10px;
+  height: 10px;
+}
+
 .select-material-button{
   padding-right: 20px;
 }
