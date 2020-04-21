@@ -23,16 +23,15 @@
 .button-and-header{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-right: 10px;
 }
 
 .button-header{
   color: black;
+  padding-bottom: 15px;
   font-size: 10px;
   height: 10px;
-}
-
-.select-material-button{
-  padding-right: 20px;
 }
 
 @media only screen and (max-device-width : 425px) {

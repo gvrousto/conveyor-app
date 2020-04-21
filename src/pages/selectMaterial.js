@@ -30,7 +30,7 @@ export default class SelectMaterial extends React.Component{
 
   createButtonMessage(){
     if(this.isButtonDisabled()){
-      return(<div className="button-header">Please select a material</div>);
+      return(<div className="button-header noselect">Please select a material</div>);
     } else {
       return(<div className="button-header"></div>);
     }
@@ -50,7 +50,7 @@ export default class SelectMaterial extends React.Component{
           <div className="button-and-header">
             { buttonMessage }
             <Link to={redirectPath}>
-              <div className="select-material-button">
+              <div>
                 <Button size="lg" disabled={this.isButtonDisabled()} variant="success">Proceed</Button>
               </div>
             </Link>
