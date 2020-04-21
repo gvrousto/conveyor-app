@@ -23,3 +23,10 @@
 .select-material-button{
   padding-right: 20px;
 }
+
+@media only screen and (max-device-width : 425px) {
+  .select-material-header{
+    font-size: 25px;
+    font-family: monospace;
+  }
+}

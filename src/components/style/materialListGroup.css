@@ -51,3 +51,19 @@
 .row-material-clicked:hover{
   background-color: lightgrey;
 }
+
+@media only screen and (max-device-width : 425px) {
+  .row-image{
+    height: 40px;
+  }
+
+  .row-material{
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: monospace;
+  }
+
+  .row-material-clicked:hover{
+    background-color: lightgrey;
+  }
+}
