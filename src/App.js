@@ -12,7 +12,7 @@ function App() {
   return (
     <HashRouter>
       <div>
-        <Redirect exact from='/' to='/load/asdf/asdf/asdf'/>
+        <Redirect exact from='/' to='/material'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/material' component={MaterialPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>
