@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/conveyor-app/static/css/main.df811f42.chunk.css",
-    "main.js": "/conveyor-app/static/js/main.0c7d1b61.chunk.js",
-    "main.js.map": "/conveyor-app/static/js/main.0c7d1b61.chunk.js.map",
+    "main.css": "/conveyor-app/static/css/main.5d5edfa9.chunk.css",
+    "main.js": "/conveyor-app/static/js/main.73327879.chunk.js",
+    "main.js.map": "/conveyor-app/static/js/main.73327879.chunk.js.map",
     "runtime-main.js": "/conveyor-app/static/js/runtime-main.1ae8cf98.js",
     "runtime-main.js.map": "/conveyor-app/static/js/runtime-main.1ae8cf98.js.map",
     "static/css/2.47e06e2e.chunk.css": "/conveyor-app/static/css/2.47e06e2e.chunk.css",
     "static/js/2.61755a29.chunk.js": "/conveyor-app/static/js/2.61755a29.chunk.js",
     "static/js/2.61755a29.chunk.js.map": "/conveyor-app/static/js/2.61755a29.chunk.js.map",
     "index.html": "/conveyor-app/index.html",
-    "precache-manifest.b0445fed6ed0170fe054d0141a45368d.js": "/conveyor-app/precache-manifest.b0445fed6ed0170fe054d0141a45368d.js",
+    "precache-manifest.242e26ebabac2d0eed00d9b616a58b3f.js": "/conveyor-app/precache-manifest.242e26ebabac2d0eed00d9b616a58b3f.js",
     "service-worker.js": "/conveyor-app/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/conveyor-app/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.df811f42.chunk.css.map": "/conveyor-app/static/css/main.df811f42.chunk.css.map",
+    "static/css/main.5d5edfa9.chunk.css.map": "/conveyor-app/static/css/main.5d5edfa9.chunk.css.map",
     "static/js/2.61755a29.chunk.js.LICENSE": "/conveyor-app/static/js/2.61755a29.chunk.js.LICENSE",
     "static/media/BaseballGloves.JPG": "/conveyor-app/static/media/BaseballGloves.389bde8f.JPG",
     "static/media/Kidd_leather_gloves_tote_bag.png": "/conveyor-app/static/media/Kidd_leather_gloves_tote_bag.fdfcc955.png",
@@ -51,7 +51,7 @@
     "static/js/runtime-main.1ae8cf98.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.61755a29.chunk.js",
-    "static/css/main.df811f42.chunk.css",
-    "static/js/main.0c7d1b61.chunk.js"
+    "static/css/main.5d5edfa9.chunk.css",
+    "static/js/main.73327879.chunk.js"
   ]
 }
