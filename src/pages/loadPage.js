@@ -17,19 +17,46 @@ class LoadPage extends React.Component{
   componentDidMount(){
     setTimeout(() => {
       console.log("done");
-      this.setState({
-        progress: 10,
-        shopifyData: ["bitch"],
-        shopifyCalled: true
-      });
-    }, 9000);
+      this.getShopifyDataByTags()
+    }, 2000);
   }
 
   getShopifyDataByTags(){
     let material = this.props.match.params.material;
     let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
-    //call here
+    const url = "https://jamestudio.myshopify.com/api/graphql"
+    let data
+    const variables = {
+    }
+    axios({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'X-Shopify-Storefront-Access-Token': "91000908be9293edff27f80b7ca3e387"
+        },
+        method: 'post',
+        data: {
+          query: `
+            {
+              products(first: 50) {
+                edges {
+                  cursor
+                  node {
+                    id
+                  }
+                }
+              }
+            }
+          `
+        },
+        url: url
+      }).then(result => {
+        console.log(result.data)
+      }).catch(error => {
+        console.log(error)
+      })
+    }
   }
 
   render(){
