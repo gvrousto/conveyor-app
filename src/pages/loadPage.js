@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import OutputPage from './outputPage';
 import './style/loadPage.css'
+import axios from 'axios';
+
+// <ReactPlayer height={650} url='https://youtu.be/N5wPLwDtzbI?start=225' playing />
+
 
 class LoadPage extends React.Component{
 
@@ -10,7 +15,7 @@ class LoadPage extends React.Component{
     this.state = {
       progress: 10,
       shopifyData: ["no"],
-      shopifyCalled: false
+      shopifyCalled: true
     }
   }
 
@@ -18,7 +23,7 @@ class LoadPage extends React.Component{
     setTimeout(() => {
       console.log("done");
       this.getShopifyDataByTags()
-    }, 2000);
+    }, 500);
   }
 
   getShopifyDataByTags(){
@@ -38,16 +43,26 @@ class LoadPage extends React.Component{
         method: 'post',
         data: {
           query: `
-            {
-              products(first: 50) {
-                edges {
-                  cursor
-                  node {
-                    id
+          {
+            products(first: 3) {
+              edges {
+                node {
+                  id
+                  onlineStoreUrl
+                  title
+                  tags
+                  images(first:1){
+                    edges{
+                      node{
+                        originalSrc
+                        id
+                      }
+                    }
                   }
                 }
               }
             }
+          }
           `
         },
         url: url
@@ -57,21 +72,21 @@ class LoadPage extends React.Component{
         console.log(error)
       })
     }
-  }
 
   render(){
     console.log(this.state.shopifyData);
+    let material = this.props.match.params.material;
+    let size = this.props.match.params.size;
+    let vector = this.props.match.params.vector;
     if(this.state.shopifyCalled === false){
       return(
         <div className="d-flex justify-content-center align-items-center main-container">
-          <ReactPlayer height={650} url='https://youtu.be/Xlasn8_mrwQ?start=262&end=270' playing />
+
         </div>
       );
     } else {
       return(
-        <div>
-          returned after the data is gotten
-        </div>
+        <OutputPage materialName={material} size={size} vector={vector}/>
       );
     }
   }

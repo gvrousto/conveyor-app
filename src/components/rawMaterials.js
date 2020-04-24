@@ -1,49 +1,66 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import Gloves from "../materialImages/baseball_gloves.png";
-import CottonLace from "../materialImages/cotton_lace.png";
-import FabricSamples from "../materialImages/fabric_samples.png";
-import KiddLeatherGloves from "../materialImages/kidd_leather_gloves.png";
-import MilitarySurplus from "../materialImages/military_surplus_fabrics.png";
-import PileOfJeans from "../materialImages/pile_of_jeans.png";
+import Gloves from "../materialIcons/BaseballGloves.JPG";
+import Cotton from "../materialIcons/cotton.png";
+import Denim from "../materialIcons/Denim.jpg";
+import Lace from "../materialIcons/lace.jpg";
+import MilitarySurplus from "../materialIcons/MilitarySurplus.jpg";
+import Upholstery from "../materialIcons/Upholstery.jpg";
+import VictorianGloves from "../materialIcons/VictorianGloves.jpg";
+import Yarn from "../materialIcons/yarn.jpg";
 import './style/rawMaterials.css';
+
+const materialList =
+  [
+    {
+      material: 'Baseball Gloves',
+      imageSrc: Gloves
+    },
+    {
+      material: 'Lace',
+      imageSrc: Lace
+    },
+    {
+      material: 'Cotton',
+      imageSrc: Cotton
+    },
+    {
+      material: 'Denim',
+      imageSrc: Denim
+    },
+    {
+      material: 'Military Surplus Canvas',
+      imageSrc: MilitarySurplus
+    },
+    {
+      material: 'Upholstery Samples',
+      imageSrc: Upholstery
+    },
+    {
+      material: 'Victorian Gloves',
+      imageSrc: VictorianGloves
+    },
+    {
+      material: 'Yarn',
+      imageSrc: Yarn
+    }
+  ];
 
 
 class RawMaterials extends React.Component {
   constructor(props){
     super(props);
     console.log(this.props);
-    if(this.props.material==="Gloves"){
-      this.state = {
-        imageSrc: Gloves,
-        imageDescription: 'Baseball Gloves'
-      };
-    } else if(this.props.material==="CottonLace"){
-      this.state = {
-        imageSrc: CottonLace,
-        imageDescription: 'Cotton Lace'
-      };
-    } else if(this.props.material==="FabricSamples"){
-      this.state = {
-        imageSrc: FabricSamples,
-        imageDescription: 'Fabric Samples'
-      };
-    } else if(this.props.material==="MilitarySurplus"){
-      this.state = {
-        imageSrc: MilitarySurplus,
-        imageDescription: 'Military Surplus'
-      };
-    } else if(this.props.material==="Jeans"){
-      this.state = {
-        imageSrc: PileOfJeans,
-        imageDescription: 'Denim'
-      };
-    } else{
-      this.state = {
-        imageSrc: KiddLeatherGloves,
-        imageDescription: 'Kidd Leather Gloves'
-      };
+
+    let selectedMaterial = materialList.filter(material=> {
+      return this.props.material===material.material;
+    });
+
+    this.state = {
+      imageSrc: selectedMaterial[0].imageSrc,
+      imageDescription: selectedMaterial[0].material
     }
+
   }
 
   render() {

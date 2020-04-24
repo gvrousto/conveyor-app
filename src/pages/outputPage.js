@@ -13,20 +13,19 @@ class OutputPage extends React.Component{
 
   constructor(props){
     super(props);
-    console.log(this.props.match.params.material);
-    if(this.props.match.params.material==="Gloves"){
+    if(this.props.materialName==="Gloves"){
       this.state = {
         imageSrc: BaseballGloveParka
       };
-    } else if(this.props.match.params.material==="FabricSamples"){
+    } else if(this.props.materialName==="FabricSamples"){
       this.state = {
         imageSrc: FabricSamples
       };
-    } else if(this.props.match.params.material==="MilitarySurplus"){
+    } else if(this.props.materialName==="MilitarySurplus"){
       this.state = {
         imageSrc: MilitarySurplus
       };
-    } else if(this.props.match.params.material==="Jeans"){
+    } else if(this.props.materialName==="Jeans"){
       this.state = {
         imageSrc: PileOfJeans
       };
@@ -38,10 +37,10 @@ class OutputPage extends React.Component{
   }
 
   render(){
-    let materialName = this.props.match.params.materialName;
-    let size = this.props.match.params.size;
-    let vector = this.props.match.params.vector;
-    let status = " COMPLETE";
+    let materialName = this.props.materialName;
+    let size = this.props.size;
+    let vector = this.props.vector;
+    let status = "AVAILABLE";
     return(
     <div className="d-flex flex-column">
       <div className="d-flex justify-content-center bd-highlight">
@@ -50,7 +49,7 @@ class OutputPage extends React.Component{
             Raw Material: {materialName}
           </div>
           <div className="attribute">
-            Vector Selection: {vector}
+            Silouette: {vector}
           </div>
           <div className="attribute">
             Size: {size}

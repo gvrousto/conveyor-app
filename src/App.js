@@ -7,17 +7,18 @@ import OutputPage from './pages/outputPage';
 import MaterialPage from './pages/selectMaterial';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// <Route exact path='/output/:materialName/:vector/:size/:material' component={OutputPage}/>
+// <Redirect exact from='/' to='/load/Upholstery%20Samples/CoachesJacket/4'/>
 
 function App() {
   return (
     <HashRouter>
       <div>
-        <Redirect exact from='/' to='/scan'/>
+        <Redirect exact from='/' to='/load/Upholstery%20Samples/CoachesJacket/4'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/material' component={MaterialPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>
         <Route exact path='/load/:material/:vector/:size' component={LoadPage}/>
-        <Route exact path='/output/:materialName/:vector/:size/:material' component={OutputPage}/>
       </div>
       {/* <Routes/> Passing global state info and function references to the rest of the app */}
     </HashRouter>
