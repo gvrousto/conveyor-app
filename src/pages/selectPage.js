@@ -59,29 +59,29 @@ class SelectPage extends React.Component{
     let path = `/load/${this.state.material}/${this.state.vectorClicked}/${this.state.size}`;
     return(
     <div className="d-flex justify-content-around">
-        <div className="rawandradio-container">
-          <RawMaterials
-            material={material}
-            />
-          <RadioButtons
-            handleSizeSelection={this.handleSizeSelection}
-            />
+      <div className="rawandradio-container">
+        <RawMaterials
+          material={material}
+          />
+        <RadioButtons
+          handleSizeSelection={this.handleSizeSelection}
+          />
+      </div>
+      <div className="selectandbutton-container">
+        <SelectOutput
+          handleVectorClicked={this.handleVectorClicked}
+          vectorClicked={this.state.vectorClicked}
+          />
+        <div className="button-container">
+          { buttonMessage }
+          <Link to={path}>
+            <Button className="button-custom-style" disabled={this.isButtonDisabled()} variant="success" onClick={this.redirectOnClick} >
+                <div className="button-text">
+                  Initiate Binding
+                </div>
+            </Button>
+          </Link>
         </div>
-        <div className="selectandbutton-container">
-          <SelectOutput
-            handleVectorClicked={this.handleVectorClicked}
-            vectorClicked={this.state.vectorClicked}
-            />
-          <div className="button-container">
-            { buttonMessage }
-            <Link to={path}>
-              <Button className="button-custom-style" disabled={this.isButtonDisabled()} variant="success" onClick={this.redirectOnClick} >
-                  <div className="button-text">
-                    Initiate Binding
-                  </div>
-              </Button>
-            </Link>
-          </div>
       </div>
     </div>
     );

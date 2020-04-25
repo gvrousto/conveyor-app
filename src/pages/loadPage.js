@@ -45,7 +45,7 @@ class LoadPage extends React.Component{
         data: {
           query: `
           {
-            products(first: 3, query:"${vectorTagQuery} AND ${materialTagQuery}") {
+            products(first: 7) {
               edges {
                 node {
                   id
