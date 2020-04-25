@@ -8,12 +8,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // <Route exact path='/output/:materialName/:vector/:size/:material' component={OutputPage}/>
 // <Redirect exact from='/' to='/load/Baseball%20gloves/Parka/4'/>
+// /select/Baseball%20gloves
 
 function App() {
   return (
     <HashRouter>
       <div>
-        <Redirect exact from='/' to='/scan'/>
+        <Redirect exact from='/' to='/select/Baseball%20Gloves'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/material' component={MaterialPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>

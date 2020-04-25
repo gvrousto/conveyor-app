@@ -21,10 +21,17 @@
   width: 200px;
 }
 
+.clothing-vector-image:hover{
+  cursor: pointer;
+}
+
 .clothing-vector-image-clicked{
   background-color: #fff;
   box-shadow: 0px 0px 10px 5px #E65243;
   width:200px;
+}
+.clothing-vector-image-clicked:hover{
+  cursor: pointer;
 }
 
 .radio-buttons-header{
