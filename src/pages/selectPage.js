@@ -59,7 +59,6 @@ class SelectPage extends React.Component{
     let path = `/load/${this.state.material}/${this.state.vectorClicked}/${this.state.size}`;
     return(
     <div className="d-flex justify-content-around">
-      <div className="d-flex">
         <div className="rawandradio-container">
           <RawMaterials
             material={material}
@@ -83,7 +82,6 @@ class SelectPage extends React.Component{
               </Button>
             </Link>
           </div>
-        </div>
       </div>
     </div>
     );
