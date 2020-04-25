@@ -4,7 +4,6 @@ import Image from 'react-bootstrap/Image';
 import Blazer from "../vectorImages/blazer.png";
 import CoachesJacket from "../vectorImages/coaches_jacket.png";
 import CroppedTrouser from "../vectorImages/cropped_trousers.png";
-
 import CrewNeckSweat from "../vectorImages/crew_neck_sweatshirt.png";
 import FivePocket from "../vectorImages/five_pocket_trousers.png";
 import HoodedSweat from "../vectorImages/hooded_sweatshirt.png";
