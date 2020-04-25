@@ -18,8 +18,8 @@
 }
 
 .output-image{
-  height: 500px;
-  width: 650px;
+  height: 600px;
+  width: 400px;
 }
 
 .collection-button-container{
@@ -32,6 +32,7 @@
 
   .output-button-style{
     height: 40px;
+    font-size: 7px;
   }
 
   .clothing-attribute-container{
@@ -40,7 +41,7 @@
     font-size: 10px;
   }
   .output-image{
-    height: 280px;
+    height: 225px;
     width: 150px;
     padding-right: 10px;
   }
