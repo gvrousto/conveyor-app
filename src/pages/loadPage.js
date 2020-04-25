@@ -14,7 +14,7 @@ class LoadPage extends React.Component{
     this.getShopifyDataByTags = this.getShopifyDataByTags.bind(this);
     this.state = {
       progress: 10,
-      shopifyData: ["no"],
+      shopifyProduct: undefined,
       shopifyCalled: true
     }
   }
@@ -28,12 +28,13 @@ class LoadPage extends React.Component{
 
   getShopifyDataByTags(){
     let material = this.props.match.params.material;
+    // let material = "Baseball gloves"
     let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
+    // let vector = "Parka"
     const url = "https://jamestudio.myshopify.com/api/graphql"
-    let data
-    const variables = {
-    }
+    let materialTagQuery = "tag:" + material
+    let vectorTagQuery = "tag:" + vector;
     axios({
         headers: {
           'Accept': 'application/json',
@@ -44,10 +45,11 @@ class LoadPage extends React.Component{
         data: {
           query: `
           {
-            products(first: 3) {
+            products(first: 3, query:"${vectorTagQuery} AND ${materialTagQuery}") {
               edges {
                 node {
                   id
+                  availableForSale
                   onlineStoreUrl
                   title
                   tags
@@ -67,14 +69,16 @@ class LoadPage extends React.Component{
         },
         url: url
       }).then(result => {
-        console.log(result.data)
+        console.log(result.data.data);
+        this.setState({
+          shopifyProduct: result.data.data.products.edges[0].node
+        });
       }).catch(error => {
         console.log(error)
       })
     }
 
   render(){
-    console.log(this.state.shopifyData);
     let material = this.props.match.params.material;
     let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
@@ -86,7 +90,12 @@ class LoadPage extends React.Component{
       );
     } else {
       return(
-        <OutputPage materialName={material} size={size} vector={vector}/>
+        <OutputPage
+          materialName={material}
+          size={size}
+          vector={vector}
+          shopifyProduct={this.state.shopifyProduct}
+        />
       );
     }
   }

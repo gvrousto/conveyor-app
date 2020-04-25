@@ -56,15 +56,6 @@ function isClicked(targetMaterial, currentMaterial){
   }
 }
 
-function isMaterialClicked(targetMaterial, currentMaterial){
-  if(targetMaterial === currentMaterial){
-    console.log("here");
-    return "row-material-clicked"
-  } else {
-    return "row-material"
-  }
-}
-
 export default function MaterialListGroup(props){
 
   let materialTableRows = columnContents.map(({material, imageSrc})=>{
@@ -88,9 +79,3 @@ export default function MaterialListGroup(props){
     </table>
   );
 }
-
-// <tr>
-//   {columnContents.map(({ field, label }) => (
-//     <td onClick={()=>props.selectMaterial(label)} key={field}>{label}</td>
-//   ))}
-// </tr>

@@ -3,18 +3,17 @@ import { HashRouter, Route, Redirect } from "react-router-dom";
 import SelectPage from './pages/selectPage';
 import LoadPage from './pages/loadPage';
 import ScanPage from './pages/scanPage';
-import OutputPage from './pages/outputPage';
 import MaterialPage from './pages/selectMaterial';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // <Route exact path='/output/:materialName/:vector/:size/:material' component={OutputPage}/>
-// <Redirect exact from='/' to='/load/Upholstery%20Samples/CoachesJacket/4'/>
+// <Redirect exact from='/' to='/load/Baseball%20gloves/Parka/4'/>
 
 function App() {
   return (
     <HashRouter>
       <div>
-        <Redirect exact from='/' to='/load/Upholstery%20Samples/CoachesJacket/4'/>
+        <Redirect exact from='/' to='/scan'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/material' component={MaterialPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>
