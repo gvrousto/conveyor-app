@@ -22,17 +22,19 @@
 
 .full-container{
   text-align: center;
-  height: 200;
 }
 
 @media only screen and (max-device-width : 425px) {
   .radio-buttons-container{
     display:flex;
     flex-direction: column;
-    justify-content:space-around;
   }
   .radio-buttons-header{
     padding-top: 10px;
     font-size: 17px;
+  }
+  .full-container{
+    text-align: center;
+    width: 140px;
   }
 }

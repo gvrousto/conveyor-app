@@ -12,9 +12,9 @@
   text-align: center;
 }
 
-.button-header{
+.button-select-header{
   font-family: monospace;
-  font-size: 10px;
+  font-size: 7px;
   height: 10px;
 }
 
@@ -34,6 +34,12 @@
   .button-text{
     font-size: 10px;
   }
+
+  .selectandbutton-container{
+    text-align: center;
+    width: 140px;
+  }
+
   .button-header{
     font-family: monospace;
     font-size: 8px;

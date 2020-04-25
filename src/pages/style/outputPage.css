@@ -17,8 +17,35 @@
   padding-top: 100px;
 }
 
+.output-image{
+  height: 500px;
+  width: 650px;
+}
+
 .collection-button-container{
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+
+@media only screen and (max-device-width : 425px) {
+
+  .output-button-style{
+    height: 40px;
+  }
+
+  .clothing-attribute-container{
+    padding-top: 100px;
+    font-family: monospace;
+    font-size: 10px;
+  }
+  .output-image{
+    height: 280px;
+    width: 150px;
+    padding-right: 10px;
+  }
+  .attribute{
+    padding-top: 30px;
+    padding-left: 10px;
+  }
 }

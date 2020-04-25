@@ -14,7 +14,7 @@ function App() {
   return (
     <HashRouter>
       <div>
-        <Redirect exact from='/' to='/select/Baseball%20Gloves'/>
+        <Redirect exact from='/' to='/load/Baseball%20gloves/Parka/4'/>
         <Route exact path='/scan' component={ScanPage}/>
         <Route exact path='/material' component={MaterialPage}/>
         <Route exact path='/select/:material' component={SelectPage}/>

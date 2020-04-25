@@ -4,8 +4,6 @@ import RadioButtons from '../components/radioButtons'
 import RawMaterials from '../components/rawMaterials'
 import Button from 'react-bootstrap/Button'
 import {Link} from 'react-router-dom';
-
-
 import './style/selectPage.css'
 
 
@@ -46,9 +44,9 @@ class SelectPage extends React.Component{
 
   createButtonMessage(){
     if(this.isButtonDisabled()){
-      return(<div className="button-header">Please select a size and vector</div>);
+      return(<div className="button-select-header">Please select a size and vector</div>);
     } else {
-      return(<div className="button-header"></div>);
+      return(<div className="button-select-header"></div>);
     }
   }
 

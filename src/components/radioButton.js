@@ -7,7 +7,6 @@ class RadioButton extends React.Component{
     let size = this.props.size;
 
     return(
-      <div>
         <div className="custom-radio radio-button-unit">
           <input
             onClick={(event)=>this.props.handleSizeSelection(size)}
@@ -15,9 +14,8 @@ class RadioButton extends React.Component{
             className="custom-control-input"
             id={size}
             name="defaultExampleRadios"></input>
-          <label className="custom-control-label custom-control-input-style" htmlFor={size}>{size}</label>
+          <label className="button-label-container custom-control-label custom-control-input-style" htmlFor={size}>{size}</label>
         </div>
-      </div>
     );
   }
 

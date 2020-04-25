@@ -18,7 +18,7 @@ class OutputPage extends React.Component{
     }
 
     return(
-      <div className="d-flex flex-column">
+      <div >
         <div className="d-flex justify-content-around bd-highlight">
           <div className="clothing-attribute-container">
             <div className="attribute">
@@ -39,22 +39,21 @@ class OutputPage extends React.Component{
             </div>
             </div>
             <div className="attribute checkout-button-container">
-              <Button variant="success" size='lg'>
+              <Button variant="success" className="output-button-style">
                 Cop
               </Button>
             </div>
           </div>
           <div className="output-image-container">
             <Image
+              className="output-image"
               src={shopifyProductImage}
-              alt="Unable to fund Shopify Image"
-              width="500px"
-              height="650px"
+              alt="Unable to find Shopify Image"
             />
           </div>
         </div>
         <div className="collection-button-container">
-          <Button>
+          <Button className="output-button-style">
             Other stuff
           </Button>
         </div>
