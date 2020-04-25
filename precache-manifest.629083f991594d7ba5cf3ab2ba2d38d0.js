@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "42998701e67efd692afec6639a855e70",
+    "revision": "5813e115c16bf1cdd09e2ce1f50eb123",
     "url": "/conveyor-app/index.html"
   },
   {
-    "revision": "b6b14b7f3dbb52f933a7",
+    "revision": "403286265236e3e4c93b",
     "url": "/conveyor-app/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "730c12ea1fb570370684",
-    "url": "/conveyor-app/static/css/main.908a1e15.chunk.css"
+    "revision": "2266b7977be6962554f8",
+    "url": "/conveyor-app/static/css/main.dbae41db.chunk.css"
   },
   {
-    "revision": "b6b14b7f3dbb52f933a7",
-    "url": "/conveyor-app/static/js/2.61755a29.chunk.js"
+    "revision": "403286265236e3e4c93b",
+    "url": "/conveyor-app/static/js/2.94080bc6.chunk.js"
   },
   {
     "revision": "f316d4e6c0976d496ccf00e4d419cd93",
-    "url": "/conveyor-app/static/js/2.61755a29.chunk.js.LICENSE"
+    "url": "/conveyor-app/static/js/2.94080bc6.chunk.js.LICENSE"
   },
   {
-    "revision": "730c12ea1fb570370684",
-    "url": "/conveyor-app/static/js/main.96693cef.chunk.js"
+    "revision": "2266b7977be6962554f8",
+    "url": "/conveyor-app/static/js/main.9debb4af.chunk.js"
   },
   {
     "revision": "9e9b7010f094bfa9bc73",
@@ -32,24 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/conveyor-app/static/media/BaseballGloves.389bde8f.JPG"
   },
   {
-    "revision": "fdfcc955ebc353d578d333f7b96d6f4f",
-    "url": "/conveyor-app/static/media/Kidd_leather_gloves_tote_bag.fdfcc955.png"
-  },
-  {
-    "revision": "7a517a49be4f48f9b1cf95ae989fb669",
-    "url": "/conveyor-app/static/media/Pile-of-jeans_coaches_jacket.7a517a49.png"
-  },
-  {
     "revision": "325c83d4e099899ec1149dd3ec6bae60",
     "url": "/conveyor-app/static/media/Upholstery.325c83d4.jpg"
-  },
-  {
-    "revision": "5a78d8fb714e8296d969e76974784c83",
-    "url": "/conveyor-app/static/media/baseball_gloves.5a78d8fb.png"
-  },
-  {
-    "revision": "d83d2e5842c2b1eb5d3ca38987ea165e",
-    "url": "/conveyor-app/static/media/baseball_gloves_parka.d83d2e58.png"
   },
   {
     "revision": "222a3b5d75944318765dc59db10354fe",
@@ -64,24 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/conveyor-app/static/media/cotton.513e075b.png"
   },
   {
-    "revision": "1451f324ddceec7b2ec10beb9f47e23f",
-    "url": "/conveyor-app/static/media/cotton_lace.1451f324.png"
-  },
-  {
     "revision": "0bd8caa0e1b5d22e1551f71a6a072cfc",
     "url": "/conveyor-app/static/media/crew_neck_sweatshirt.0bd8caa0.png"
   },
   {
     "revision": "0489e9df71dc6f060fdfe8551add0ea0",
     "url": "/conveyor-app/static/media/cropped_trousers.0489e9df.png"
-  },
-  {
-    "revision": "5da4e1a30abe66d2fc53e8213dad2f0b",
-    "url": "/conveyor-app/static/media/fabric_samples.5da4e1a3.png"
-  },
-  {
-    "revision": "e8c8cb620b096951156ec4a4b2a41ca4",
-    "url": "/conveyor-app/static/media/fabric_samples_poncho.e8c8cb62.png"
   },
   {
     "revision": "6658375343f396cfbbbb6bb5892cca3d",
@@ -92,20 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/conveyor-app/static/media/hooded_sweatshirt.1a62324f.png"
   },
   {
-    "revision": "c7a21879eb0a0701997b27b133449c40",
-    "url": "/conveyor-app/static/media/kidd_leather_gloves.c7a21879.png"
-  },
-  {
     "revision": "09d23b9177068b0677ad7dedbc6b53cc",
     "url": "/conveyor-app/static/media/long_sleeve_henley_shirt.09d23b91.png"
-  },
-  {
-    "revision": "5152c613083bbec3abac211e975f3fe8",
-    "url": "/conveyor-app/static/media/military_surplus_fabrics.5152c613.png"
-  },
-  {
-    "revision": "1c4714dc8d39c7b2dc5deb56da373a68",
-    "url": "/conveyor-app/static/media/military_surplus_shirts.1c4714dc.png"
   },
   {
     "revision": "f47a1331ba47ffc2ecbacd281d59e164",
@@ -114,10 +74,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "62ed8b954761dd76dc8ca8828ef17f03",
     "url": "/conveyor-app/static/media/parka.62ed8b95.png"
-  },
-  {
-    "revision": "095cab6758feda424022da0d368e384c",
-    "url": "/conveyor-app/static/media/pile_of_jeans.095cab67.png"
   },
   {
     "revision": "1cfadf38a8c6998f450e2f885aa8c932",
