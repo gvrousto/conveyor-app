@@ -1,6 +1,6 @@
 .clothing-attribute-container{
   padding-top: 100px;
-  padding-left: 250px;
+  padding-left: 100px;
   font-family: monospace;
   font-size: 35px;
 }
@@ -16,4 +16,10 @@
 
 .output-image-container{
   padding-top: 100px;
+}
+
+.collection-button-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }

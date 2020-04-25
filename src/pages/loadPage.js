@@ -28,10 +28,7 @@ class LoadPage extends React.Component{
 
   getShopifyDataByTags(){
     let material = this.props.match.params.material;
-    // let material = "Baseball gloves"
-    let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
-    // let vector = "Parka"
     const url = "https://jamestudio.myshopify.com/api/graphql"
     let materialTagQuery = "tag:" + material
     let vectorTagQuery = "tag:" + vector;
@@ -45,7 +42,7 @@ class LoadPage extends React.Component{
         data: {
           query: `
           {
-            products(first: 7) {
+            products(first: 3, query:"${materialTagQuery} AND ${vectorTagQuery}") {
               edges {
                 node {
                   id

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button'
 import './style/selectPage.css'
 import './style/outputPage.css'
 
@@ -17,37 +18,47 @@ class OutputPage extends React.Component{
     }
 
     return(
-    <div className="d-flex flex-column">
-      <div className="d-flex justify-content-center bd-highlight">
-        <div className="clothing-attribute-container">
-          <div className="attribute">
-            Raw Material: {materialName}
+      <div className="d-flex flex-column">
+        <div className="d-flex justify-content-around bd-highlight">
+          <div className="clothing-attribute-container">
+            <div className="attribute">
+              Raw Material: {materialName}
+            </div>
+            <div className="attribute">
+              Silouette: {vector}
+            </div>
+            <div className="attribute">
+              Size: {size}
+            </div>
+            <div className="d-flex flex-start justify-row attribute">
+            <div className="">
+              Status:
+            </div>
+            <div className="status-attribute">
+              {status}
+            </div>
+            </div>
+            <div className="attribute checkout-button-container">
+              <Button variant="success" size='lg'>
+                Cop
+              </Button>
+            </div>
           </div>
-          <div className="attribute">
-            Silouette: {vector}
-          </div>
-          <div className="attribute">
-            Size: {size}
-          </div>
-          <div className="d-flex flex-start justify-row attribute">
-          <div className="">
-            Status:
-          </div>
-          <div className="status-attribute">
-            {status}
-          </div>
+          <div className="output-image-container">
+            <Image
+              src={shopifyProductImage}
+              alt="Unable to fund Shopify Image"
+              width="500px"
+              height="650px"
+            />
           </div>
         </div>
-        <div className="output-image-container">
-          <Image
-            src={shopifyProductImage}
-            alt="Unable to fund Shopify Image"
-            width="500px"
-            height="650px"
-          />
+        <div className="collection-button-container">
+          <Button>
+            Other stuff
+          </Button>
         </div>
       </div>
-    </div>
     );
   }
 }
