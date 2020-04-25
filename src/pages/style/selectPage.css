@@ -14,8 +14,8 @@
 
 .button-select-header{
   font-family: monospace;
-  font-size: 7px;
-  height: 10px;
+  font-size: 9px;
+  height: 15px;
 }
 
 .button-text{
@@ -40,8 +40,9 @@
     width: 140px;
   }
 
-  .button-header{
+  .button-select-header{
     font-family: monospace;
-    font-size: 8px;
+    font-size: 7px;
+    height: 10px;
   }
 }
