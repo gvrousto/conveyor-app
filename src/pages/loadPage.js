@@ -35,7 +35,7 @@ class LoadPage extends React.Component{
       }, timeoutValue);
     } else if(this.state.shopifyCalled === false){
       console.log("greater than");
-      // this.getShopifyDataByTags();
+      this.getShopifyDataByTags();
     }
   }
 
