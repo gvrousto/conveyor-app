@@ -5,6 +5,14 @@ import Button from 'react-bootstrap/Button'
 import './style/selectPage.css'
 
 
+function isClicked(currentStatus){
+  if(currentStatus === true){
+    return "status-attribute"
+  } else {
+    return "status-attribute-unavailable"
+  }
+}
+
 class OutputPage extends React.Component{
 
   render(){
@@ -12,12 +20,18 @@ class OutputPage extends React.Component{
     let size = this.props.size;
     let vector = this.props.vector;
     let status = "AVAILABLE";
+    let statusIndicator = false;
     let clothingRedirect = "https://jamestudio.myshopify.com/collections/all";
     let shopifyProductImage = ""
     if(this.props.shopifyProduct){
       console.log(this.props.shopifyProduct);
       shopifyProductImage=this.props.shopifyProduct.images.edges[0].node.originalSrc;
-      clothingRedirect = this.props.shopifyProduct.onlineStoreUrl
+      clothingRedirect = this.props.shopifyProduct.onlineStoreUrl;
+      statusIndicator = this.props.shopifyProduct.availableForSale;
+    }
+    
+    if(statusIndicator === false){
+      status = "UNAVAILABLE"
     }
 
     return(
@@ -37,7 +51,7 @@ class OutputPage extends React.Component{
             <div>
               Status:
             </div>
-            <div className="status-attribute">
+            <div className={isClicked(statusIndicator)}>
               {status}
             </div>
             </div>

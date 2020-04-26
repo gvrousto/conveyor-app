@@ -15,7 +15,7 @@ class LoadPage extends React.Component{
     this.state = {
       progress: 10,
       shopifyProduct: undefined,
-      shopifyCalled: true,
+      shopifyCalled: false,
       value: 0
     }
   }
@@ -23,26 +23,20 @@ class LoadPage extends React.Component{
   componentDidUpdate(){
     let timeoutValue = Math.floor(Math.random() * 300) + 150;
     if(this.state.value <= 90){
-      console.log("DID UPDATE");
       let addedValue = Math.floor(Math.random() * 3) + 1;
-      console.log(addedValue);
       setTimeout(() => {
-        console.log("here");
         let newValue = this.state.value + addedValue;
         this.setState({
           value: newValue
         })
       }, timeoutValue);
     } else if(this.state.shopifyCalled === false){
-      console.log("greater than");
       this.getShopifyDataByTags();
     }
   }
 
   componentDidMount(){
-    this.getShopifyDataByTags();
     setTimeout(() => {
-      console.log("DID MOUNT");
       let newValue = this.state.value + 6;
       this.setState({
         value: newValue

@@ -26,6 +26,11 @@
   color: darkgreen;
 }
 
+.status-attribute-unavailable{
+  padding-left: 15px;
+  color: darkred;
+}
+
 .output-image-container{
   margin-top: 100px;
   height: 600px;
