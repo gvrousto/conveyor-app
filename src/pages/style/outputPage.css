@@ -62,8 +62,11 @@
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    font-size: 9px;
     font-family: monospace;
+  }
+
+  .collection-button-text{
+    font-size: 9px;
   }
 
   .output-image{

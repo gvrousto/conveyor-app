@@ -53,14 +53,18 @@ class OutputPage extends React.Component{
             <div className="collection-button-container">
               <a href={clothingRedirect}>
                 <Button variant="success" className="output-button-style">
-                  Purchase
+                  <div className="collection-button-text">
+                    Purchase
+                  </div>
                 </Button>
               </a>
             </div>
             <div className="collection-button-container">
               <a href="https://jamestudio.myshopify.com/collections/all">
                 <Button>
-                  View Full Stock
+                  <div className="collection-button-text">
+                    View Full Stock
+                  </div>
                 </Button>
               </a>
             </div>
