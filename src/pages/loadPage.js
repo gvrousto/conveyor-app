@@ -4,7 +4,7 @@ import OutputPage from './outputPage';
 import './style/loadPage.css'
 import axios from 'axios';
 
-// <ReactPlayer height={650} url='https://youtu.be/N5wPLwDtzbI?start=225' playing />
+//           <ReactPlayer height={650} url='https://youtu.be/N5wPLwDtzbI?start=230&end=242' playing />
 
 
 class LoadPage extends React.Component{
@@ -15,15 +15,38 @@ class LoadPage extends React.Component{
     this.state = {
       progress: 10,
       shopifyProduct: undefined,
-      shopifyCalled: true
+      shopifyCalled: false,
+      value: 0
+    }
+  }
+
+  componentDidUpdate(){
+    let timeoutValue = Math.floor(Math.random() * 300) + 150;
+    if(this.state.value <= 90){
+      console.log("DID UPDATE");
+      let addedValue = Math.floor(Math.random() * 3) + 1;
+      console.log(addedValue);
+      setTimeout(() => {
+        console.log("here");
+        let newValue = this.state.value + addedValue;
+        this.setState({
+          value: newValue
+        })
+      }, timeoutValue);
+    } else if(this.state.shopifyCalled === false){
+      console.log("greater than");
+      // this.getShopifyDataByTags();
     }
   }
 
   componentDidMount(){
     setTimeout(() => {
-      console.log("done");
-      this.getShopifyDataByTags()
-    }, 500);
+      console.log("DID MOUNT");
+      let newValue = this.state.value + 6;
+      this.setState({
+        value: newValue
+      })
+    }, 3000);
   }
 
   getShopifyDataByTags(){
@@ -68,7 +91,8 @@ class LoadPage extends React.Component{
       }).then(result => {
         console.log(result.data.data);
         this.setState({
-          shopifyProduct: result.data.data.products.edges[0].node
+          shopifyProduct: result.data.data.products.edges[0].node,
+          shopifyCalled: true
         });
       }).catch(error => {
         console.log(error)
@@ -79,10 +103,14 @@ class LoadPage extends React.Component{
     let material = this.props.match.params.material;
     let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
+    let value = this.state.value;
     if(this.state.shopifyCalled === false){
       return(
-        <div className="d-flex justify-content-center align-items-center main-container">
-
+        <div className="d-flex flex-column justify-content-center align-items-center main-container">
+          <div className="custom-video-container">
+            <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=230&end=242' playing />
+          </div>
+          <progress max={100} value={value}></progress>
         </div>
       );
     } else {

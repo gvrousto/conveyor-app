@@ -8,13 +8,27 @@
   padding-top: 50px;
 }
 
+.btn-output{
+  color: white;
+  background-color: #81bf75;
+  font-family: monospace;
+  border-radius: .25rem;
+}
+
+.custom-style{
+  color: white;
+  background-color: #81bf75;
+}
+
 .status-attribute{
   padding-left: 15px;
   color: darkgreen;
 }
 
 .output-image-container{
-  padding-top: 100px;
+  margin-top: 100px;
+  height: 600px;
+  width: 400px;
 }
 
 .output-image{
@@ -26,20 +40,29 @@
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  font-family: monospace;
 }
 
 @media only screen and (max-device-width : 425px) {
-
-  .output-button-style{
-    height: 40px;
-    font-size: 7px;
-  }
 
   .clothing-attribute-container{
     padding-top: 100px;
     font-family: monospace;
     font-size: 10px;
   }
+
+  .output-image-container{
+    height: 225px;
+    width: 150px;
+  }
+
+  .collection-button-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: monospace;
+  }
+
   .output-image{
     height: 225px;
     width: 150px;

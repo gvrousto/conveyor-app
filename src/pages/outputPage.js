@@ -1,8 +1,8 @@
 import React from 'react';
+import './style/outputPage.css'
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button'
 import './style/selectPage.css'
-import './style/outputPage.css'
 
 
 class OutputPage extends React.Component{
@@ -12,9 +12,12 @@ class OutputPage extends React.Component{
     let size = this.props.size;
     let vector = this.props.vector;
     let status = "AVAILABLE";
+    let clothingRedirect = "https://jamestudio.myshopify.com/collections/all";
     let shopifyProductImage = ""
     if(this.props.shopifyProduct){
+      console.log(this.props.shopifyProduct);
       shopifyProductImage=this.props.shopifyProduct.images.edges[0].node.originalSrc;
+      clothingRedirect = this.props.shopifyProduct.onlineStoreUrl
     }
 
     return(
@@ -39,9 +42,11 @@ class OutputPage extends React.Component{
             </div>
             </div>
             <div className="attribute checkout-button-container">
-              <Button variant="success" className="output-button-style">
-                Cop
-              </Button>
+              <a href={clothingRedirect}>
+                <Button variant="success" className="output-button-style">
+                  Purchase
+                </Button>
+              </a>
             </div>
           </div>
           <div className="output-image-container">
@@ -53,9 +58,11 @@ class OutputPage extends React.Component{
           </div>
         </div>
         <div className="collection-button-container">
-          <Button className="output-button-style">
-            Other stuff
-          </Button>
+          <a href="https://jamestudio.myshopify.com/collections/all">
+            <Button>
+              View Full Stock
+            </Button>
+          </a>
         </div>
       </div>
     );

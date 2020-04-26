@@ -4,7 +4,6 @@ import { Button } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import {Link} from 'react-router-dom';
 import './style/scanPage.css'
-// <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=88' playing />
 
 class ScanPage extends React.Component{
 
@@ -16,9 +15,7 @@ class ScanPage extends React.Component{
         </div>
         <div className="scan-container">
           <div className="shapes-container">
-
-
-
+            <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=88' playing />
             <div className="stacked-div lines-container">
               <div className="stacked-div">
                 <Line x1={0} x2={110} y1={10} y2={10} stroke={{color:'#E65243'}} strokeWidth={20} />
