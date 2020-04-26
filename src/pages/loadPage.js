@@ -15,7 +15,7 @@ class LoadPage extends React.Component{
     this.state = {
       progress: 10,
       shopifyProduct: undefined,
-      shopifyCalled: false,
+      shopifyCalled: true,
       value: 0
     }
   }
@@ -40,6 +40,7 @@ class LoadPage extends React.Component{
   }
 
   componentDidMount(){
+    this.getShopifyDataByTags();
     setTimeout(() => {
       console.log("DID MOUNT");
       let newValue = this.state.value + 6;

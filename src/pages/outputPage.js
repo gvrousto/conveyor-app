@@ -22,7 +22,7 @@ class OutputPage extends React.Component{
 
     return(
       <div >
-        <div className="d-flex justify-content-around bd-highlight">
+        <div className="d-flex justify-content-center bd-highlight">
           <div className="clothing-attribute-container">
             <div className="attribute">
               Raw Material: {materialName}
@@ -34,35 +34,37 @@ class OutputPage extends React.Component{
               Size: {size}
             </div>
             <div className="d-flex flex-start justify-row attribute">
-            <div className="">
+            <div>
               Status:
             </div>
             <div className="status-attribute">
               {status}
             </div>
             </div>
-            <div className="attribute checkout-button-container">
+          </div>
+          <div className="output-image-container">
+            <div className="output-image">
+              <Image
+                className="output-image"
+                src={shopifyProductImage}
+                alt="Unable to find Shopify Image"
+              />
+            </div>
+            <div className="collection-button-container">
               <a href={clothingRedirect}>
                 <Button variant="success" className="output-button-style">
                   Purchase
                 </Button>
               </a>
             </div>
+            <div className="collection-button-container">
+              <a href="https://jamestudio.myshopify.com/collections/all">
+                <Button>
+                  View Full Stock
+                </Button>
+              </a>
+            </div>
           </div>
-          <div className="output-image-container">
-            <Image
-              className="output-image"
-              src={shopifyProductImage}
-              alt="Unable to find Shopify Image"
-            />
-          </div>
-        </div>
-        <div className="collection-button-container">
-          <a href="https://jamestudio.myshopify.com/collections/all">
-            <Button>
-              View Full Stock
-            </Button>
-          </a>
         </div>
       </div>
     );
