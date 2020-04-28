@@ -24,7 +24,7 @@ class LoadPage extends React.Component {
   componentDidUpdate(){
     let timeoutValue = Math.floor(Math.random() * 300) + 150;
     if(this.state.value <= 90){
-      let addedValue = Math.floor(Math.random() * 3) + 1;
+      let addedValue = Math.floor(Math.random() * 3) + 2;
       setTimeout(() => {
         let newValue = this.state.value + addedValue;
         this.setState({
