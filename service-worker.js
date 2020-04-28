@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/conveyor-app/precache-manifest.ad3037a2dbe6556fa38ecdbe44b85a5e.js"
+  "/conveyor-app/precache-manifest.fa940776620547bfb2e3df67b909ba0c.js"
 );
 
 self.addEventListener('message', (event) => {
