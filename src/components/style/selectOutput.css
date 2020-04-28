@@ -68,19 +68,19 @@
     width: 160px;
   }
   .clothing-vector-unit{
-    width: 60px;
+    width: 75px;
     height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .clothing-vector-image{
-    width: 60px;
+    width: 70px;
   }
   .clothing-vector-image-clicked{
     background-color: #fff;
     box-shadow: 0px 0px 10px 5px #E65243;
-    width: 60px;
+    width: 70px;
   }
   .select-output-header{
     padding-top: 10px;
