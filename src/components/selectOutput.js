@@ -1,24 +1,23 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 
-import Blazer from "../vectorImages/blazer.png";
-import CoachesJacket from "../vectorImages/coaches_jacket.png";
-import CroppedTrouser from "../vectorImages/cropped_trousers.png";
-import CrewNeckSweat from "../vectorImages/crew_neck_sweatshirt.png";
-import FivePocket from "../vectorImages/five_pocket_trousers.png";
-import HoodedSweat from "../vectorImages/hooded_sweatshirt.png";
-import LongSleeveHenley from "../vectorImages/long_sleeve_henley_shirt.png";
-import OxfordShirt from "../vectorImages/oxford_shirt.png";
-import Parka from "../vectorImages/parka.png";
-import PoloShirt from "../vectorImages/polo_shirt.png";
-import Poncho from "../vectorImages/poncho.png";
-import RugbyShirt from "../vectorImages/rugby_shirt.png";
-import ShortPants from "../vectorImages/short_pants.png";
-import ShortSleeveButton from "../vectorImages/short_sleeve_button_up_shirt.png";
-import TShirt from "../vectorImages/t-shirt.png";
-import Tote from "../vectorImages/tote_bag.png";
-import Tracksuit from "../vectorImages/tracksuit_jacket.png";
-import Trench from "../vectorImages/trenchcoat.png";
+import Balaclava from "../vectors/balaclava.png";
+import Base_Layer_Tee from "../vectors/base layer tee.png";
+import Bucket_Hat from "../vectors/bucket hat.png";
+import Carpenter_Pants from "../vectors/carpenter pants.png";
+import Glove_Tee from "../vectors/glove tee.png";
+import Mock_Neck_Sweater from "../vectors/mock neck sweater.png";
+import Mock_Neck_Tee from "../vectors/mock neck tee.png";
+import Parka from "../vectors/N3-B Parka.png";
+import Patchwork_Pants from "../vectors/patchwork pants.png";
+import Pocket_Pants from "../vectors/pocket pants.png";
+import Poncho from "../vectors/poncho.png";
+import Quarter_Zip from "../vectors/quarter zip.png";
+import Shirt_Jacket from "../vectors/shirt jacket.png";
+import Shopper_Bag from "../vectors/shopper bag.png";
+import Short_Sleeve_Work_Shirt from "../vectors/short sleeve work shirt.png";
+import Side_Bag from "../vectors/side bag.png";
+import Workspace_Tote from "../vectors/workspace tote.png";
 
 import './style/selectOutput.css';
 
@@ -46,115 +45,109 @@ class SelectOutput extends React.Component{
               <div className="clothing-vectors-container">
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("CoachesJacket")}
-                    src={CoachesJacket}
-                    onClick={() => this.handleClick("CoachesJacket")}/>
+                    className={this.isClicked("balaclava")}
+                    src={Balaclava}
+                    onClick={() => this.handleClick("balaclava")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("CrewNeckSweat")}
-                    src={CrewNeckSweat}
-                    onClick={() => this.handleClick("CrewNeckSweat")}/>
+                    className={this.isClicked("base layer tee")}
+                    src={Base_Layer_Tee}
+                    onClick={() => this.handleClick("base layer tee")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("FivePocket")}
-                    src={FivePocket}
-                    onClick={() => this.handleClick("FivePocket")}/>
+                    className={this.isClicked("bucket hat")}
+                    src={Bucket_Hat}
+                    onClick={() => this.handleClick("bucket hat")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("HoodedSweat")}
-                    src={HoodedSweat}
-                    onClick={() => this.handleClick("HoodedSweat")}/>
+                    className={this.isClicked("carpenter pants")}
+                    src={Carpenter_Pants}
+                    onClick={() => this.handleClick("carpenter pants")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("LongSleeveHenley")}
-                    src={LongSleeveHenley}
-                    onClick={() => this.handleClick("LongSleeveHenley")}/>
+                    className={this.isClicked("glove tee")}
+                    src={Glove_Tee}
+                    onClick={() => this.handleClick("glove tee")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("OxfordShirt")}
-                    src={OxfordShirt}
-                    onClick={() => this.handleClick("OxfordShirt")}/>
+                    className={this.isClicked("mock neck sweater")}
+                    src={Mock_Neck_Sweater}
+                    onClick={() => this.handleClick("mock neck sweater")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("Parka")}
-                    src={Parka}
-                    onClick={() => this.handleClick("Parka")}/>
+                    className={this.isClicked("mock neck tee")}
+                    src={Mock_Neck_Tee}
+                    onClick={() => this.handleClick("mock neck tee")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("PoloShirt")}
-                    src={PoloShirt}
-                    onClick={() => this.handleClick("PoloShirt")}/>
+                    className={this.isClicked("patchwork pants")}
+                    src={Patchwork_Pants}
+                    onClick={() => this.handleClick("patchwork pants")}/>
                 </div>
                 <div className= "clothing-vector-unit">
                   <Image
-                    className={this.isClicked("RugbyShirt")}
-                    src={RugbyShirt}
-                    onClick={() => this.handleClick("RugbyShirt")}/>
+                    className={this.isClicked("quarter zip")}
+                    src={Quarter_Zip}
+                    onClick={() => this.handleClick("quarter zip")}/>
                 </div>
               </div>
               <div className="clothing-vectors-container">
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("ShortPants")}
-                  src={ShortPants}
-                  onClick={() => this.handleClick("ShortPants")}/>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("N3-B Parka")}
+                    src={Parka}
+                    onClick={() => this.handleClick("N3-B Parka")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("workspace tote")}
+                    src={Workspace_Tote}
+                    onClick={() => this.handleClick("workspace tote")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("side bag")}
+                    src={Side_Bag}
+                    onClick={() => this.handleClick("side bag")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("short sleeve work shirt")}
+                    src={Short_Sleeve_Work_Shirt}
+                    onClick={() => this.handleClick("short sleeve work shirt")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("shopper bag")}
+                    src={Shopper_Bag}
+                    onClick={() => this.handleClick("shopper bag")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("shirt jacket")}
+                    src={Shirt_Jacket}
+                    onClick={() => this.handleClick("shirt jacket")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("poncho")}
+                    src={Poncho}
+                    onClick={() => this.handleClick("poncho")}/>
+                </div>
+                <div className= "clothing-vector-unit">
+                  <Image
+                    className={this.isClicked("pocket pants")}
+                    src={Pocket_Pants}
+                    onClick={() => this.handleClick("pocket pants")}/>
+                </div>
               </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("TShirt")}
-                  src={TShirt}
-                  onClick={() => this.handleClick("TShirt")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("ShortSleeveButton")}
-                  src={ShortSleeveButton}
-                  onClick={() => this.handleClick("ShortSleeveButton")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("Tote")}
-                  src={Tote}
-                  onClick={() => this.handleClick("Tote")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("Trench")}
-                  src={Trench}
-                  onClick={() => this.handleClick("Trench")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("Tracksuit")}
-                  src={Tracksuit}
-                  onClick={() => this.handleClick("Tracksuit")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("Poncho")}
-                  src={Poncho}
-                  onClick={() => this.handleClick("Poncho")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("CroppedTrouser")}
-                  src={CroppedTrouser}
-                  onClick={() => this.handleClick("CroppedTrouser")}/>
-              </div>
-              <div className= "clothing-vector-unit">
-                <Image
-                  className={this.isClicked("Blazer")}
-                  src={Blazer}
-                  onClick={() => this.handleClick("Blazer")}/>
-              </div>
-            </div>
           </div>
         </div>
       </div>

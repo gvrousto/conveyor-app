@@ -29,7 +29,7 @@ class OutputPage extends React.Component{
       clothingRedirect = this.props.shopifyProduct.onlineStoreUrl;
       statusIndicator = this.props.shopifyProduct.availableForSale;
     }
-    
+
     if(statusIndicator === false){
       status = "UNAVAILABLE"
     }

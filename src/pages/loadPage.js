@@ -7,7 +7,7 @@ import axios from 'axios';
 //           <ReactPlayer height={650} url='https://youtu.be/N5wPLwDtzbI?start=230&end=242' playing />
 
 
-class LoadPage extends React.Component{
+class LoadPage extends React.Component {
 
   constructor(props){
     super(props);
@@ -16,6 +16,7 @@ class LoadPage extends React.Component{
       progress: 10,
       shopifyProduct: undefined,
       shopifyCalled: false,
+      shopifySuccess: false,
       value: 0
     }
   }
@@ -37,7 +38,7 @@ class LoadPage extends React.Component{
 
   componentDidMount(){
     setTimeout(() => {
-      let newValue = this.state.value + 6;
+      let newValue = this.state.value + 7;
       this.setState({
         value: newValue
       })
@@ -87,11 +88,58 @@ class LoadPage extends React.Component{
         console.log(result.data.data);
         this.setState({
           shopifyProduct: result.data.data.products.edges[0].node,
-          shopifyCalled: true
+          shopifyCalled: true,
+          shopifySuccess: true
         });
       }).catch(error => {
-        console.log(error)
-      })
+        axios({
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+              'X-Shopify-Storefront-Access-Token': "91000908be9293edff27f80b7ca3e387"
+            },
+            method: 'post',
+            data: {
+              query: `
+              {
+                products(first: 3, query:"${vectorTagQuery}") {
+                  edges {
+                    node {
+                      id
+                      availableForSale
+                      onlineStoreUrl
+                      title
+                      tags
+                      images(first:1){
+                        edges{
+                          node{
+                            originalSrc
+                            id
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              `
+            },
+            url: url
+          }).then(result => {
+            console.log(result.data.data);
+            this.setState({
+              shopifyProduct: result.data.data.products.edges[0].node,
+              shopifyCalled: true,
+              shopifySuccess: false
+            });
+          }).catch(error => {
+            console.log(error)
+            this.setState({
+              shopifyCalled: true,
+              shopifySuccess: false
+            });
+          });
+      });
     }
 
   render(){
@@ -115,6 +163,7 @@ class LoadPage extends React.Component{
           size={size}
           vector={vector}
           shopifyProduct={this.state.shopifyProduct}
+          shopifySuccess={this.state.shopifySuccess}
         />
       );
     }
