@@ -1,5 +1,5 @@
 .clothing-attribute-container{
-  padding-top: 100px;
+  padding-top: 75px;
   font-family: monospace;
   font-size: 35px;
   margin-right: 60px;
@@ -32,7 +32,7 @@
 }
 
 .output-image-container{
-  margin-top: 100px;
+  margin-top: 75px;
   height: 600px;
   width: 400px;
 }
