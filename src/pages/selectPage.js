@@ -73,11 +73,11 @@ class SelectPage extends React.Component{
         <div className="button-container">
           { buttonMessage }
           <Link to={path}>
-            <Button className="button-custom-style" disabled={this.isButtonDisabled()} variant="success" onClick={this.redirectOnClick} >
-                <div className="button-text">
+            <div>
+              <Button size="lg" disabled={this.isButtonDisabled()} variant="success">
                   Initiate Binding
-                </div>
-            </Button>
+              </Button>
+            </div>
           </Link>
         </div>
       </div>
