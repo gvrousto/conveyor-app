@@ -2,12 +2,20 @@ import React from 'react';
 import {Line} from 'react-shapes';
 import { Button } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
+import YouTube from 'react-youtube';
 import {Link} from 'react-router-dom';
 import './style/scanPage.css'
 
 class ScanPage extends React.Component{
 
   render(){
+    const opts = {
+      height: "100%",
+      width: "100%",
+      playerVars: {
+        autoplay: 1,
+      }
+    };
     return(
       <div className="scan-page-container">
         <div className="scan-header">
@@ -15,7 +23,7 @@ class ScanPage extends React.Component{
         </div>
         <div className="scan-container">
           <div className="shapes-container">
-            <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=88&autoplay=1&mute=1' playing />
+            <YouTube containerClassName="video-container" videoId="N5wPLwDtzbI" opts={opts}/>
             <div className="stacked-div lines-container">
               <div className="stacked-div">
                 <Line x1={0} x2={110} y1={10} y2={10} stroke={{color:'#E65243'}} strokeWidth={20} />
