@@ -151,7 +151,7 @@ class LoadPage extends React.Component {
       return(
         <div className="d-flex flex-column justify-content-center align-items-center main-container">
           <div className="custom-video-container">
-            <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=230&end=242' playing />
+            <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=230&end=242&autoplay=1&mute=1' playing />
           </div>
           <progress max={100} value={value}></progress>
         </div>
