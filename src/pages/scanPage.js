@@ -19,7 +19,6 @@ class ScanPage extends React.Component{
       width: "100%",
       playerVars: {
         autoplay: 1,
-        mute: 1,
         start: 88
       }
     };
