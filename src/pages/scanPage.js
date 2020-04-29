@@ -1,7 +1,6 @@
 import React from 'react';
 import {Line} from 'react-shapes';
 import { Button } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
 import YouTube from 'react-youtube';
 import {Link} from 'react-router-dom';
 import './style/scanPage.css'

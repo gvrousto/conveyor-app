@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import YouTube from 'react-youtube';
 import OutputPage from './outputPage';
 import './style/loadPage.css'
