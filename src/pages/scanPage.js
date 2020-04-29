@@ -24,7 +24,7 @@ class ScanPage extends React.Component{
         </div>
         <div className="scan-container">
           <div className="shapes-container">
-            <YouTube containerClassName="video-container" videoId="N5wPLwDtzbI" opts={opts}/>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N5wPLwDtzbI?start=88&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div className="stacked-div lines-container">
               <div className="stacked-div">
                 <Line x1={0} x2={110} y1={10} y2={10} stroke={{color:'#E65243'}} strokeWidth={20} />
