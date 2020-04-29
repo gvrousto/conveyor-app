@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import YouTube from 'react-youtube';
 import OutputPage from './outputPage';
 import './style/loadPage.css'
 import axios from 'axios';
@@ -142,16 +143,32 @@ class LoadPage extends React.Component {
       });
     }
 
+    _onReady(event) {
+      // access to player in all event handlers via event.target
+      event.target.playVideo();
+    }
+
   render(){
     let material = this.props.match.params.material;
     let size = this.props.match.params.size;
     let vector = this.props.match.params.vector;
     let value = this.state.value;
+
+    const opts = {
+      height: "100%",
+      width: "100%",
+      playerVars: {
+        autoplay: 1,
+        mute: 1,
+        start: 230
+      }
+    };
+
     if(this.state.shopifyCalled === false){
       return(
         <div className="d-flex flex-column justify-content-center align-items-center main-container">
           <div className="custom-video-container">
-            <ReactPlayer height="100%" width="100%" url='https://youtu.be/N5wPLwDtzbI?start=230&end=242&autoplay=1&mute=1' playing />
+            <YouTube containerClassName="video-container" onReady={this._onReady} videoId="N5wPLwDtzbI" opts={opts}/>
           </div>
           <progress max={100} value={value}></progress>
         </div>
