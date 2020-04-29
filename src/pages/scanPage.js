@@ -8,15 +8,22 @@ import './style/scanPage.css'
 
 class ScanPage extends React.Component{
 
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.playVideo();
+  }
+
   render(){
     const opts = {
       height: "100%",
       width: "100%",
       playerVars: {
         autoplay: 1,
-        mute: 1
+        mute: 1,
+        start: 88
       }
     };
+
     return(
       <div className="scan-page-container">
         <div className="scan-header">
@@ -24,7 +31,7 @@ class ScanPage extends React.Component{
         </div>
         <div className="scan-container">
           <div className="shapes-container">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N5wPLwDtzbI?start=88&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <YouTube containerClassName="video-container" onReady={this._onReady} videoId="N5wPLwDtzbI" opts={opts}/>
             <div className="stacked-div lines-container">
               <div className="stacked-div">
                 <Line x1={0} x2={110} y1={10} y2={10} stroke={{color:'#E65243'}} strokeWidth={20} />
