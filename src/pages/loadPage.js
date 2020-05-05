@@ -159,7 +159,8 @@ class LoadPage extends React.Component {
       playerVars: {
         autoplay: 1,
         mute: 1,
-        start: 230
+        start: 230,
+        playsinline: 1
       }
     };
 
