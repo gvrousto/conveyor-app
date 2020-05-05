@@ -19,7 +19,8 @@ class ScanPage extends React.Component{
       playerVars: {
         autoplay: 1,
         mute: 1,
-        start: 88
+        start: 88,
+        playsinline: 1 
       }
     };
 
